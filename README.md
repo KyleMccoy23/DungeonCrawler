@@ -1,4 +1,4 @@
-# Dungeon Crawler
+# Dungeon Crawler - WIP
 
 ## Overview
 Dungeon Crawler is a roguelike game that simulates a D&D adventure in a text-based interface. The player creates a character by choosing a race, class, and name, and kill everything in the dungeon full of traps, treasures, and enemies. The player can use commands like `look`, `move`, `attack`, `cast`, `use`, and `inventory` to interact with the environment and combat. The goal is to defeat all enough enemys to fight the final boss, or die trying.
