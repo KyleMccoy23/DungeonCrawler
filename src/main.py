@@ -23,7 +23,10 @@ class Game:
             case 'n':
                 self.loadGame()
             case _:
-                self.newGame()
+                try:
+                    error("Invalid input")
+                except:
+                    pass
 
         
     def newGame(self):

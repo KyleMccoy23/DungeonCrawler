@@ -4,7 +4,7 @@ from help import *
 
 try:
     system('python.exe -m pip install --upgrade pip')
-    system('pip install -r assets/requirements.txt')
+    system('pip install -r assets/dependencies.txt')
 except Exception as e:
     print(e)
     exit(0)
