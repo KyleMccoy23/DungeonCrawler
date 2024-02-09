@@ -15,13 +15,12 @@ def error(msg="Error!!!"):
 
 def logError(msg):
     t = time.ctime().replace(" ", "").replace(':',"-")
-    p = 'E:/Code/DungeonCrawler/rsc/logs/'+t+'.txt'
+    p = '../rsc/logs/'+t+'.txt'
     try:
         f = open(p, 'w')
         f.write(msg)
         f.close()
     
     except:
-        f = open(p, 'x+')
-        f.write(msg)
-        f.close()
+        f = open(p, 'x')
+        logError(msg)

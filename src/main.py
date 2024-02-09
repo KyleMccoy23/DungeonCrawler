@@ -1,6 +1,7 @@
 from config import *
 from player import *
 from playerManager import *
+from file import *
 
 
 class Game:
@@ -27,15 +28,26 @@ class Game:
                     error("Invalid input")
                 except:
                     pass
-
         
     def newGame(self):
         self.player = self.pManager.makePlayer(self.player)
         system('cls')
         print(self.player)
 
+        savePlayer(self.player)
+
     def loadGame(self):
-        pass
+
+        save = input(getSaveNames()+"Enter File Name:")
+
+        try:
+            self.player = getPlayer(save)
+            system('cls')
+            print(self.player)
+        except:
+            print("no player(main)")
+
+
 
 system('cls')
 g = Game()

@@ -28,6 +28,7 @@ class Player:
         self.identity = {
             'race':None,
             'class':None,
+            'name':"",
         }
 
         self.inventory = [
@@ -64,3 +65,6 @@ class Player:
 
     def setStatPoints(self, sp):
         self.statPoints = sp
+    
+    def getName(self):
+        return self.identity['name']

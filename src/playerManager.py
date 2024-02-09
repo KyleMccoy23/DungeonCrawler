@@ -8,6 +8,8 @@ class playerManager:
 
         self.player.setIdentity('race', self.playerRace())
         self.player.setIdentity('class', self.playerClass())
+        self.player.setIdentity('name', self.playerName())
+        
 
         self.playerStats()
 
@@ -81,6 +83,11 @@ class playerManager:
             system('cls')
         system('cls')
         return races[selectedRace-1]
+    
+    def playerName(self):
+        name = input("Enter your players name: ")
+        system('cls')
+        return str(name)
 
     def bonuses(self):
         self.player.applyBonus_stat('Con', 10)

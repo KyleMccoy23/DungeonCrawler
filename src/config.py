@@ -1,4 +1,4 @@
-from os import system
+from os import system, listdir
 from sys import exit
 from help import *
 
@@ -8,6 +8,8 @@ try:
 except Exception as e:
     print(e)
     exit(0)
+
+import pickle
 
 classes = [
     "Fighter", 
