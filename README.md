@@ -22,3 +22,9 @@ Dungeon Crawler is a roguelike game that simulates a D&D adventure in a text-bas
 - class skills
 - level-ups
 - basic skills
+
+
+### Feb 9, 2024:
+- basic save/load states
+- fixed error logging error
+- added player names
