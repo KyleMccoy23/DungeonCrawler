@@ -1,11 +1,14 @@
 from config import *
+import pickle
+mainPath = "../rsc/playerData/"
+
 
 def getPlayer(name):
     try:
         p= pickle.load(open(f"{mainPath}{name}", 'rb'))
         return p
     except Exception as e:
-        error(e+"\nno player(file)")
+        error(str(str(e)+"\nno player(file)"))
 
 def savePlayer(player):
     filePath = f"{mainPath}{player.getName()}"
@@ -16,10 +19,10 @@ def savePlayer(player):
         savePlayer(player)
 
 def getSaveNames():
-    names=""
+    names= []
     files = listdir(mainPath)
     for f in files:
-        names += f+"\n"
+        names.append(f)
     return names
 
 def getData(file):

@@ -33,7 +33,7 @@ class Game:
                 except:
                     pass
 
-        self.battleManager.startBattle(self.player, self.player)
+        # self.battleManager.startBattle(self.player, self.player)
         
     def newGame(self):
         self.player = self.pManager.makePlayer(self.player)
@@ -43,8 +43,15 @@ class Game:
         savePlayer(self.player)
 
     def loadGame(self):
+        saves = getSaveNames()
 
-        save = input(getSaveNames()+"Enter File Name:")
+        for n,s in enumerate(saves):
+            print(f'{n+1}) {s}')
+
+        save = input("Enter File Name: ")
+
+        if save.isnumeric():
+            save = saves[(int(save)-1)]
 
         try:
             self.player = getPlayer(save)
@@ -59,6 +66,10 @@ class Game:
 
 
 
-sleep(2)
-system('cls')
-g = Game()
+# sleep(2)
+try:
+    system('cls')
+    g = Game()
+except:
+    system('cls')
+    g = Game()

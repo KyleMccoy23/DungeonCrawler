@@ -9,8 +9,6 @@ try:
 except Exception as e:
     error(e)
 
-import pickle
-
 classes = [
     "Fighter", 
     "Rogue", 
@@ -38,5 +36,3 @@ races = [
     "Dragonborn", 
     "Aasimar"
 ]
-
-mainPath = "../rsc/playerData/"

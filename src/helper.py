@@ -1,6 +1,7 @@
 from datetime import date
-from config import mainPath
+from time import ctime, sleep
 from file import getData
+mainPath = "../rsc/playerData/"
 
 def statHelp():
     with open('rsc\player-stat.txt', 'r') as statHelp:
@@ -18,8 +19,9 @@ def error(msg="Error!!!"):
 def logError(msg):
     t = str(date.today())
     p = '../rsc/logs/'+t+'.txt'
+    msg = str(ctime())+': '+msg+'\n'
     try:
-        f = open(p, 'w')
+        f = open(p, 'a')
         f.write(msg)
         f.close()
     
@@ -29,4 +31,6 @@ def logError(msg):
 
 def getSkill(statNum):
     data = getData(f'{mainPath}/{statNum}.txt')
+    print(data)
+    sleep(2)
     return data.split(',')
