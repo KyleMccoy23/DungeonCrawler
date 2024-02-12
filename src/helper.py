@@ -30,7 +30,8 @@ def logError(msg):
         logError(msg)
 
 def getSkill(statNum):
-    data = getData(f'{mainPath}/{statNum}.txt')
-    print(data)
-    sleep(2)
-    return data.split(',')
+    try:
+        data = getData(f'{mainPath}skills/{statNum}.txt')
+        return data.split(',')
+    except:
+        return

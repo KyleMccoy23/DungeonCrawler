@@ -1,6 +1,7 @@
 from config import *
+
 import pickle
-mainPath = "../rsc/playerData/"
+mainPath = "rsc/playerData/"
 
 
 def getPlayer(name):
@@ -26,7 +27,9 @@ def getSaveNames():
     return names
 
 def getData(file):
+    if not path.isfile(file):
+        error(f"No file named : {file}(file.py)")
     data = ''
-    with open(file, 'r') as f:
+    with open(str(file), 'r') as f:
         data = f.read()
     return data

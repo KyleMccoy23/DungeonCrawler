@@ -67,9 +67,5 @@ class Game:
 
 
 # sleep(2)
-try:
-    system('cls')
-    g = Game()
-except:
-    system('cls')
-    g = Game()
+system('cls')
+g = Game()

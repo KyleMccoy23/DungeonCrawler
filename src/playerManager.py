@@ -92,7 +92,5 @@ class playerManager:
 
     def bonuses(self):
         self.player.applyBonus_stat('Con', 10)
-        print(getSkill('000'))
-        sleep(2)
-        # self.player.applyBonus_skill()
+        self.player.applyBonus_skill(getSkill('000'))
 

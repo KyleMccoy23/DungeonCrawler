@@ -63,7 +63,7 @@ class Player:
         self.stats[stat] += bonus
 
     def applyBonus_skill(self, skill):
-        self.skills.append(skill)
+        self.addSkill(skill)
 
     def setStatPoints(self, sp):
         self.statPoints = sp
@@ -71,7 +71,5 @@ class Player:
     def getName(self):
         return self.identity['name']
     
-    def setSkills(self, skill):
+    def addSkill(self, skill):
         self.skills.append(skill)
-
-        
