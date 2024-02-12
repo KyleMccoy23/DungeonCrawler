@@ -1,13 +1,13 @@
 from os import system, listdir
-from sys import exit
-from help import *
+# from sys import exit
+from helper import *
+from time import sleep
 
 try:
     system('python.exe -m pip install --upgrade pip')
-    system('pip install -r assets/dependencies.txt')
+    system('pip install -r ../rsc/dependencies.txt')
 except Exception as e:
-    print(e)
-    exit(0)
+    error(e)
 
 import pickle
 
@@ -38,3 +38,5 @@ races = [
     "Dragonborn", 
     "Aasimar"
 ]
+
+mainPath = "../rsc/playerData/"

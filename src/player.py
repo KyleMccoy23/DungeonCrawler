@@ -9,6 +9,9 @@ class Player:
         self.statPoints = 30
 
         self.level = 1
+        self.exp = 0
+
+        self.status = ""
 
         self.stats = {
             'Str':None,

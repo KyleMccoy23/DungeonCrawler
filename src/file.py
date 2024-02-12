@@ -1,7 +1,5 @@
 from config import *
 
-mainPath = "../rsc/playerData/"
-
 def getPlayer(name):
     try:
         p= pickle.load(open(f"{mainPath}{name}", 'rb'))
@@ -23,3 +21,9 @@ def getSaveNames():
     for f in files:
         names += f+"\n"
     return names
+
+def getData(file):
+    data = ''
+    with open(file, 'r') as f:
+        data = f.read()
+    return data

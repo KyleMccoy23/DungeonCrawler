@@ -1,4 +1,5 @@
 from config import *
+from helper import getData
 
 class playerManager:
 
@@ -91,4 +92,4 @@ class playerManager:
 
     def bonuses(self):
         self.player.applyBonus_stat('Con', 10)
-        self.player.applyBonus_skill('Dodge', "allows the user the dodge the next attack")
+        self.player.applyBonus_skill(getSkill('000'))

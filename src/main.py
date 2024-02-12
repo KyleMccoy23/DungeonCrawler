@@ -1,6 +1,7 @@
 from config import *
-from player import *
-from playerManager import *
+from player import Player
+from playerManager import playerManager
+from battleManager import battleManager
 from file import *
 
 
@@ -10,10 +11,13 @@ class Game:
         self.pManager = playerManager()
         self.player = Player()
 
+        self.battleManager = battleManager()
+
         self.run()
 
         
     def run(self):
+        system('cls')
         new = input('Do you what to start a new game (y/n): ')
 
         system('cls')
@@ -28,6 +32,8 @@ class Game:
                     error("Invalid input")
                 except:
                     pass
+
+        self.battleManager.startBattle(self.player, self.player)
         
     def newGame(self):
         self.player = self.pManager.makePlayer(self.player)
@@ -45,9 +51,14 @@ class Game:
             system('cls')
             print(self.player)
         except:
-            print("no player(main)")
+            logError("no player(main)")
+            print("No player of that name")
+            sleep(2)
+            self.run()
 
 
 
+
+sleep(2)
 system('cls')
 g = Game()
