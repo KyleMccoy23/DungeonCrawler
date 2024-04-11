@@ -1,6 +1,6 @@
 from os import system, listdir, path
 from sys import exit
-from helper import *
+from help import *
 from time import sleep
 
 try:

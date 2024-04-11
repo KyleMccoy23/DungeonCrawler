@@ -1,4 +1,6 @@
 import datetime
+from file import getData
+mainPath = "rsc/playerData/"
 
 def statHelp(*args) -> None:
     with open('rsc/player-stat.txt', 'r') as statHelp:
@@ -26,3 +28,10 @@ def logError(msg:str) -> bool:
         return True
     except:
         return False
+    
+def getSkill(statNum):
+    try:
+        data = getData(f'{mainPath}skills/{statNum}.txt')
+        return data.split(',')
+    except:
+        return

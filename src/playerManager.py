@@ -1,6 +1,6 @@
 from config import *
 from player import Player
-from helper import getSkill
+from help import getSkill
 
 class playerManager:
 

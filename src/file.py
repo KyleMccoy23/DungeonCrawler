@@ -3,7 +3,6 @@ from config import *
 import pickle
 mainPath = "rsc/playerData/"
 
-
 def getPlayer(name):
     try:
         p= pickle.load(open(f"{mainPath}{name}", 'rb'))
