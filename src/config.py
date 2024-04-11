@@ -1,13 +1,13 @@
-from os import system
+from os import system, listdir, path
 from sys import exit
-from help import *
+from helper import *
+from time import sleep
 
 try:
     system('python.exe -m pip install --upgrade pip')
     system('pip install -r rsc/dependencies.txt')
 except Exception as e:
-    print(e)
-    exit(0)
+    error(e)
 
 classes = [
     "Fighter", 

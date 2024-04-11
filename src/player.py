@@ -9,6 +9,9 @@ class Player:
         self.statPoints = 30
 
         self.level = 1
+        self.exp = 0
+
+        self.status = ""
 
         self.stats: dict[str, None|int] = {
             'Str':None,
@@ -28,6 +31,7 @@ class Player:
         self.identity: dict[str:str|None] = {
             'race':None,
             'class':None,
+            'name':"",
         }
 
         self.inventory = [
@@ -65,3 +69,8 @@ class Player:
     def setStatPoints(self, sp: int) -> None:
         self.statPoints = sp
 
+    def getName(self) -> str|None:
+        return self.identity['name']
+    
+    def addSkill(self, skill) -> None:
+        self.skills.append(skill)

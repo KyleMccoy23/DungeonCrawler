@@ -1,6 +1,8 @@
 from config import *
-from player import *
-from playerManager import *
+from player import Player
+from playerManager import playerManager
+from battleManager import battleManager
+from file import *
 
 
 class Game:
@@ -8,6 +10,8 @@ class Game:
         
         self.pManager = playerManager()
         self.player = Player()
+
+        self.battleManager = battleManager()
 
         self.run()
 
@@ -26,14 +30,35 @@ class Game:
                 try:error("Invalid input (Game.run 'Start')")
                 except:self.run()
 
+        # self.battleManager.startBattle(self.player, self.player)
         
     def newGame(self) -> None:
         self.player = self.pManager.makePlayer(self.player)
         system('cls')
         print(self.player)
+        savePlayer(self.player)
 
-    def loadGame(self) -> None:
-        raise NotImplementedError()
+    def loadGame(self):
+        saves = getSaveNames()
+
+        for n,s in enumerate(saves):
+            print(f'{n+1}) {s}')
+
+        save = input("Enter File Name: ")
+
+        if save.isnumeric():
+            save = saves[(int(save)-1)]
+
+        try:
+            self.player = getPlayer(save)
+            system('cls')
+            print(self.player)
+        except:
+            logError("no player(main)")
+            print("No player of that name")
+            sleep(2)
+            self.run()
+
 
 
 def main() -> None:

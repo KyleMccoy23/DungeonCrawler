@@ -1,6 +1,9 @@
 from config import *
 
-class Battle:
+class battleManager:
+
+    def __init__(self):
+        pass
     
     def startBattle(self, player, enemy):
         self.player = player
