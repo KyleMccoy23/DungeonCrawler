@@ -1,8 +1,9 @@
 from config import *
+from player import Player
 
 class playerManager:
 
-    def makePlayer(self, player):
+    def makePlayer(self, player: Player) -> object:
         self.player = player
         self.maxStats = 30
 
@@ -20,10 +21,10 @@ class playerManager:
 
         return self.player
 
-    def playerPhysicalAttributes(self):
+    def playerPhysicalAttributes(self) -> tuple:
         return self.makePlayerHealth(), self.makePlayerMana(), self.makePlayerStamina()
     
-    def playerStats(self):
+    def playerStats(self) -> None:
         for s in self.player.stats:
             print("How many point do you want to put into your stats (Max is 10)")
             print(f"Remaining Stat Points: {self.maxStats}")
@@ -37,7 +38,7 @@ class playerManager:
             self.setStats(s, statPoints)
             system('cls')
 
-    def setStats(self, stat, points):
+    def setStats(self, stat, points) -> None:
         if points > 10: 
             points = 10
             self.maxStats-=points
@@ -49,16 +50,16 @@ class playerManager:
             self.maxStats-=points
             self.player.setStats(stat, points)
 
-    def makePlayerHealth(self):
+    def makePlayerHealth(self) -> int:
         return 10 + self.player.getStats('Con') * self.player.level
 
-    def makePlayerMana(self):
+    def makePlayerMana(self) -> int:
         return 5 + self.player.getStats('Int') * self.player.level
     
-    def makePlayerStamina(self):
+    def makePlayerStamina(self) -> int:
         return 10 + (self.player.getStats('Con')*self.player.level) * self.player.level
     
-    def playerClass(self):
+    def playerClass(self) -> str:
         while True:
             for n, c in enumerate(classes):
                 print(n+1, c)
@@ -70,7 +71,7 @@ class playerManager:
         system('cls')
         return classes[selectedClass-1]
 
-    def playerRace(self):
+    def playerRace(self) -> str:
         while True:
             for n, r in enumerate(races):
                 print(n+1, r)
@@ -82,6 +83,6 @@ class playerManager:
         system('cls')
         return races[selectedRace-1]
 
-    def bonuses(self):
+    def bonuses(self) -> None:
         self.player.applyBonus_stat('Con', 10)
         self.player.applyBonus_skill('Dodge', "allows the user the dodge the next attack")

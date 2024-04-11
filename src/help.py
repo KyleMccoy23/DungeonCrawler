@@ -1,27 +1,28 @@
-import time
+import datetime
 
-def statHelp():
-    with open('assets\player-stat.txt', 'r') as statHelp:
+def statHelp(*args) -> None:
+    with open('rsc/player-stat.txt', 'r') as statHelp:
         for l in statHelp.readlines():
             print(l)
 
-def creationHelp():
+def creationHelp(*args) -> None:
     statHelp()
     print('\nEnter \'q\' to quit')
 
-def error(msg="Error!!!"):
-    logError(msg)
-    raise Exception(msg)
+def error(msg:str ="Error!!!") -> None:
+    logged = logError(msg)
+    if logged:
+        raise Exception(msg)
+    else:
+        exit(1)
 
-def logError(msg):
-    t = time.ctime().replace(" ", "").replace(':',"-")
-    p = 'E:/Code/DungeonCrawler/rsc/logs/'+t+'.txt'
+def logError(msg:str) -> bool:
+    t = str(datetime.date.today())
+    p = 'rsc/logs/'+t+'.txt'
     try:
-        f = open(p, 'w')
-        f.write(msg)
+        f = open(p, 'a')
+        f.write(msg+"\n")
         f.close()
-    
+        return True
     except:
-        f = open(p, 'x+')
-        f.write(msg)
-        f.close()
+        return False
