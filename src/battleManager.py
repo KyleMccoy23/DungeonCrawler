@@ -1,16 +1,46 @@
 from config import *
 
 class battleManager:
-
-    def __init__(self):
-        pass
     
-    def startBattle(self, player, enemy):
+    def startBattle(self, player, enemy) -> None:
         self.player = player
         self.enemy = enemy
 
-        self.a()
+        self.battling = True
 
-    def a(self):
-        print(self.enemy)
-        print(self.player)
+        system('cls')
+
+        self.battle()
+
+    def battle(self):
+
+        while self.battling:
+
+            self.enemy.attack(self.player)
+
+            for bar in self.enemy.bars:
+                bar.draw()
+
+            print("-"*20)
+
+            for bar in self.player.bars:
+                bar.draw()
+
+            self.checkHealth()
+
+            input()
+
+            system('cls')
+
+    def checkHealth(self):
+        if self.enemy.health == 0 and self.player.health == 0:
+            self.battling = False
+            print(f"THIS BATTLE IS A DRAW")
+
+        elif self.enemy.health == 0:
+            self.battling = False
+            print(f"THIS BATTLE IS WON BY THE PLAYER")
+
+        elif self.player.health == 0:
+            self.battling = False
+            print(f"THIS BATTLE IS WON BY THE ENEMY")

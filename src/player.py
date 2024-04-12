@@ -1,10 +1,14 @@
+from weapons import fists
 from config import *
 
 class Player:
     def __init__(self) -> None:
-        self.health = None
-        self.mana = None
-        self.stamina = None
+        self.health = 0
+        self.healthMax = 0
+        self.mana = 0
+        self.manaMax = 0
+        self.stamina = 0
+        self.staminaMax = 0
 
         self.statPoints = 30
 
@@ -12,6 +16,8 @@ class Player:
         self.exp = 0
 
         self.status = ""
+
+        self.defaultWeapon = fists
 
         self.stats: dict[str, int] = {
             'Str':0,
@@ -38,6 +44,14 @@ class Player:
             
         ]
 
+        self.inHand = self.defaultWeapon
+
+        self.healthBar = None
+        self.manaBar = None
+        self.staminaBar = None
+
+        self.bars = []
+        
     def __str__(self) -> str:
         info = f'Health: {self.health}\nMana: {self.mana}\nStamina: {self.stamina}\n\nLevel: {self.level}\nClass: '+self.identity['class']+'\nRace: '+self.identity['race']+'\nSkills\n'
         for s in self.skills:
@@ -52,6 +66,9 @@ class Player:
 
     def setAttributes(self, att:tuple) -> None:
         self.health, self.mana, self.stamina = att
+        self.healthMax = self.health
+        self.manaMax = self.mana
+        self.staminaMax = self.stamina
 
     def setStats(self, stat:str, points: int) -> None:
         self.stats[stat] = points
@@ -83,3 +100,16 @@ class Player:
     
     def addSkill(self, skill) -> None:
         self.skills.append(skill)
+
+    def setBars(self, hbar, mBar, sBar) -> None:
+        self.healthBar = hbar
+        self.manaBar = mBar
+        self.staminaBar = sBar
+
+        self.bars = [self.healthBar, self.manaBar, self.staminaBar]
+
+    def attack(self, target):
+        target.health -= self.inHand.damage
+        target.health = max(target.health, 0)
+        target.healthBar.update()
+    

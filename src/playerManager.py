@@ -1,5 +1,6 @@
 from config import *
 from help import getSkill
+from healthBar import healthBar, manaBar, staminaBar
 
 class playerManager:
 
@@ -18,6 +19,7 @@ class playerManager:
 
         self.bonuses()
 
+        self.player.setBars(healthBar(self.player, color='green2'), manaBar(self.player, color="blue2"), staminaBar(self.player, color='green'))
 
         self.player.setStatPoints(self.maxStats)
 
