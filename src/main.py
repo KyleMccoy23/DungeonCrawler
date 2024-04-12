@@ -29,7 +29,7 @@ class Game:
                 try:error("Invalid input (Game.run 'Start')")
                 except:self.run()
 
-        raise NotImplementedError("Gameplay mechs not implemented yet")
+        self.battleManager.startBattle(self.player, self.player)
         
     def newGame(self) -> None:
         self.player = self.pManager.makePlayer(self.player)
