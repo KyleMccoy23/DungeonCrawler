@@ -27,3 +27,13 @@ fists = Weapon(name="Fists",
                weaponType="blunt",
                damage=2,
                value=0)
+
+class SpecialWeapon(Weapon):
+    def __init__(self, 
+                 name: str, 
+                 weaponType: str, 
+                 damage: int, 
+                 value: int,
+                 *atributes) -> None:
+        super().__init__(name, weaponType, damage, value)
+        self.atributes = atributes
