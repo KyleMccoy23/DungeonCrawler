@@ -1,10 +1,9 @@
 from config import *
-from player import Player
 from help import getSkill
 
 class playerManager:
 
-    def makePlayer(self, player: Player) -> object:
+    def makePlayer(self, player) -> object:
         self.player = player
         self.maxStats = 30
 
@@ -32,16 +31,16 @@ class playerManager:
             print("How many point do you want to put into your stats (Max is 10)")
             print(f"Remaining Stat Points: {self.maxStats}")
             for ss in self.player.stats:
-                if self.player.stats[ss] is not None:
+                if self.player.stats[ss] > 0:
                     print(f'{ss} : {self.player.getStats(ss)}')
-            statPoints = input(f"{s}: ")
+            statPoints = input(f"{s} : ")
             if statPoints == '': statPoints = 1
             elif statPoints == 'q': exit(0)
             else: statPoints = int(statPoints)
             self.setStats(s, statPoints)
             system('cls')
 
-    def setStats(self, stat, points) -> None:
+    def setStats(self, stat:str, points:int) -> None:
         if points > 10: 
             points = 10
             self.maxStats-=points

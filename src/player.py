@@ -13,13 +13,13 @@ class Player:
 
         self.status = ""
 
-        self.stats: dict[str, None|int] = {
-            'Str':None,
-            'Dex':None,
-            'Con':None,
-            'Int':None,
-            'Wis':None,
-            'Cha':None
+        self.stats: dict[str, int] = {
+            'Str':0,
+            'Dex':0,
+            'Con':0,
+            'Int':0,
+            'Wis':0,
+            'Cha':0
         }
         
         self.skills = [
@@ -28,9 +28,9 @@ class Player:
 
         self.attribute = None
 
-        self.identity: dict[str:str|None] = {
-            'race':None,
-            'class':None,
+        self.identity: dict[str,str] = {
+            'race':"",
+            'class':"",
             'name':"",
         }
 
@@ -56,15 +56,24 @@ class Player:
     def setStats(self, stat:str, points: int) -> None:
         self.stats[stat] = points
 
-    def getStats(self, stat: str) -> None | int:
+    def getStats(self, stat: str) -> int:
         return self.stats[stat]
     
     def applyBonus_stat(self, stat: str, bonus: int) -> None:
         self.stats[stat] += bonus
 
-    def applyBonus_skill(self, skillName: str, skillDesc: str) -> None:
-        s = [skillName, skillDesc]
+    def applyBonus_skill(self, skillName: str, skillDesc: str, damage:str) -> None: # type: ignore
+        s = [skillName, skillDesc, damage]
         self.skills.append(s)
+    
+    def applyBonus_skill(self, skill: list[str]) -> None: # type: ignore
+        self.skills.append(skill)
+
+    def applyBonus_skill(self, *args: None) -> None:
+        try:    
+            error("Skill Not Found (file.getData -> help.GetSkill -> playerManager.bonuses -> player.applyBonus_skill)")
+        except:
+            print("Skill Not Found")
 
     def setStatPoints(self, sp: int) -> None:
         self.statPoints = sp

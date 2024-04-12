@@ -2,6 +2,7 @@ import datetime
 from file import getData
 mainPath = "rsc/playerData/"
 
+
 def statHelp(*args) -> None:
     with open('rsc/player-stat.txt', 'r') as statHelp:
         for l in statHelp.readlines():
@@ -29,9 +30,9 @@ def logError(msg:str) -> bool:
     except:
         return False
     
-def getSkill(statNum):
+def getSkill(statNum: str) -> list[str]|None:
     try:
         data = getData(f'{mainPath}skills/{statNum}.txt')
         return data.split(',')
     except:
-        return
+        return None

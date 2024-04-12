@@ -1,15 +1,17 @@
 from os import system, listdir, path
 from sys import exit
-from help import *
+from help import error
 from time import sleep
+
+mainPath = "rsc/playerData/"
 
 try:
     system('python.exe -m pip install --upgrade pip')
     system('pip install -r rsc/dependencies.txt')
 except Exception as e:
-    error(e)
+    error(str(e))
 
-classes = [
+classes: list[str] = [
     "Fighter", 
     "Rogue", 
     "Wizard", 
@@ -24,7 +26,7 @@ classes = [
     "Druid"
 ]
 
-races = [
+races: list[str] = [
     "Human", 
     "Elf",
     "Dwarf", 
