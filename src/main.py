@@ -1,5 +1,4 @@
 from config import *
-from player import Player
 from playerManager import playerManager
 from battleManager import battleManager
 from file import *
@@ -30,7 +29,7 @@ class Game:
                 try:error("Invalid input (Game.run 'Start')")
                 except:self.run()
 
-        # self.battleManager.startBattle(self.player, self.player)
+        raise NotImplementedError("Gameplay mechs not implemented yet")
         
     def newGame(self) -> None:
         self.player = self.pManager.makePlayer(self.player)
@@ -38,13 +37,13 @@ class Game:
         print(self.player)
         savePlayer(self.player)
 
-    def loadGame(self):
+    def loadGame(self) -> None:
         saves = getSaveNames()
 
         for n,s in enumerate(saves):
             print(f'{n+1}) {s}')
 
-        save = input("Enter File Name: ")
+        save:str = input("Enter File Name: ")
 
         if save.isnumeric():
             save = saves[(int(save)-1)]
@@ -54,7 +53,7 @@ class Game:
             system('cls')
             print(self.player)
         except:
-            logError("no player(main)")
+            error("no player(main)")
             print("No player of that name")
             sleep(2)
             self.run()
