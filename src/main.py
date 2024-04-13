@@ -9,6 +9,9 @@ class Game:
         
         self.pManager = playerManager()
         self.player = Player()
+        self.enemy = Player()
+
+        self.enemy = getPlayer("test")
 
         self.battleManager = battleManager()
 
@@ -29,7 +32,7 @@ class Game:
                 try:error("Invalid input (Game.run 'Start')")
                 except:self.run()
 
-        self.battleManager.startBattle(self.player, self.player)
+        self.battleManager.startBattle(self.player, self.enemy)
         
     def newGame(self) -> None:
         self.player = self.pManager.makePlayer(self.player)
@@ -52,9 +55,9 @@ class Game:
             self.player = getPlayer(save)
             system('cls')
             print(self.player)
-        except:
+        except Exception as e:
             error("no player(main)")
-            print("No player of that name")
+            print("No player of that name:", e)
             sleep(2)
             self.run()
 

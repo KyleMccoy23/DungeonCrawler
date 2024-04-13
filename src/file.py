@@ -2,13 +2,13 @@ from config import *
 from player import Player
 import pickle
 
-mainPath = "rsc/playerData/"
+mainPath = "../rsc/playerData/"
 
 def getPlayer(name:str) -> Player|None:
     try:
         p= pickle.load(open(f"{mainPath}{name}", 'rb'))
         return p
-    except Exception as e:
+    except FileNotFoundError as e:
         error(str(str(e)+"\nno player(file)"))
 
 def savePlayer(player) -> None:

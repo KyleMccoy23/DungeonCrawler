@@ -3,7 +3,7 @@ from sys import exit
 from help import error
 from time import sleep
 
-mainPath = "rsc/playerData/"
+mainPath = "../rsc/playerData/"
 
 try:
     system('python.exe -m pip install --upgrade pip')

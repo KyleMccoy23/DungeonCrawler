@@ -1,24 +1,24 @@
+from item import Item
 
-class Weapon:
+class Weapon(Item):
     def __init__(self,
                  name: str,
                  weaponType: str,
                  damage: int,
                  value: int
                  ) -> None:
-        self.name = name
+        super().__init__(name, 
+                         value, 
+                         "weapon")
         self.weaponType = weaponType
         self.damage = damage
-        self.value = value
 
-
-
-iron_sword = Weapon(name="Iron Sword",
+ironSword = Weapon(name="Iron Sword",
                     weaponType="sharp",
                     damage=5,
                     value=10)
 
-short_bow = Weapon(name="Short Bow",
+shortBow = Weapon(name="Short Bow",
                    weaponType="ranged",
                    damage=4,
                    value=8)
@@ -35,5 +35,8 @@ class SpecialWeapon(Weapon):
                  damage: int, 
                  value: int,
                  *atributes) -> None:
-        super().__init__(name, weaponType, damage, value)
+        super().__init__(name, 
+                         weaponType, 
+                         damage, 
+                         value)
         self.atributes = atributes

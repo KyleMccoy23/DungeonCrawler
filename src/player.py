@@ -1,4 +1,5 @@
-from weapons import fists
+from item import Item
+from weapons import Weapon, fists
 from config import *
 
 class Player:
@@ -40,8 +41,8 @@ class Player:
             'name':"",
         }
 
-        self.inventory = [
-            
+        self.inventory: list[tuple] = [
+            (fists, 1)
         ]
 
         self.inHand = self.defaultWeapon
@@ -109,7 +110,31 @@ class Player:
         self.bars = [self.healthBar, self.manaBar, self.staminaBar]
 
     def attack(self, target):
-        target.health -= self.inHand.damage
+        target.health -= self.inHand.damage # type: ignore
         target.health = max(target.health, 0)
         target.healthBar.update()
+
+        print(f'{self.identity.get('name')} attacked with {self.inHand.name}')
     
+    def hasItem(self, item: str) -> bool:
+        for i in self.inventory:
+            if i[0].name == item:
+                return True
+        return False
+    
+    def getItem(self, item: str):
+        for i in self.inventory:
+            if i[0].name == item:
+                return i[0]
+
+    def changeWeapons(self, item: str) -> None:
+        if not self.hasItem(item):
+            return None
+        itemObj: Item = self.getItem(item) # type: ignore
+        if not itemObj.type == "weapon":
+            input('not weapon')
+            return None
+        self.inHand = itemObj
+
+    def unequip(self) -> None:
+        self.inHand = self.defaultWeapon
