@@ -1,6 +1,7 @@
 from config import *
 from player import Player
 import pickle
+from help import error
 
 mainPath = "../rsc/playerData/"
 
@@ -8,8 +9,8 @@ def getPlayer(name:str) -> Player|None:
     try:
         p= pickle.load(open(f"{mainPath}{name}", 'rb'))
         return p
-    except FileNotFoundError as e:
-        error(str(str(e)+"\nno player(file)"))
+    except:
+        error("\nno player(file)")
 
 def savePlayer(player) -> None:
     filePath = f"{mainPath}{player.getName()}"

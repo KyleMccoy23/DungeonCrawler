@@ -1,5 +1,4 @@
 from config import *
-from weapons import ironSword
 
 class battleManager:
     
@@ -7,12 +6,9 @@ class battleManager:
         self.player = player
         self.enemy = enemy
 
-        self.player.inventory.append((ironSword, 1))
-
         self.battling = True
 
         system('cls')
-        print(self.player.inventory[0][0].name)
 
         self.player.changeWeapons("Iron Sword")
 
@@ -22,21 +18,23 @@ class battleManager:
 
         while self.battling:
 
-            self.player.attack(self.enemy)
-
-            for bar in self.enemy.bars:
-                bar.draw()
-
+            self.enemy.bars[0].draw()
             print("-"*20)
-
             for bar in self.player.bars:
                 bar.draw()
-
             self.checkHealth()
+
+            if not self.battling:
+                break
+
+            self.attacks(self.player, self.enemy)
 
             input()
 
             system('cls')
+
+    def attacks(self, character, enemy):
+        character.attack(enemy)
 
     def checkHealth(self):
         if self.enemy.health == 0 and self.player.health == 0:

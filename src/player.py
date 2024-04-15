@@ -1,5 +1,5 @@
 from item import Item
-from weapons import Weapon, fists
+from items import fists
 from config import *
 
 class Player:
@@ -41,8 +41,8 @@ class Player:
             'name':"",
         }
 
-        self.inventory: list[tuple] = [
-            (fists, 1)
+        self.inventory: list[list] = [
+            [fists, 1]
         ]
 
         self.inHand = self.defaultWeapon
@@ -115,6 +115,9 @@ class Player:
         target.healthBar.update()
 
         print(f'{self.identity.get('name')} attacked with {self.inHand.name}')
+    
+    def useSkill(self, skill) -> None:
+        raise NotImplementedError("SKills are not a thing yet")
     
     def hasItem(self, item: str) -> bool:
         for i in self.inventory:

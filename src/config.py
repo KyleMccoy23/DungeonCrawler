@@ -7,7 +7,7 @@ mainPath = "../rsc/playerData/"
 
 try:
     system('python.exe -m pip install --upgrade pip')
-    system('pip install -r rsc/dependencies.txt')
+    system('pip install -r ../rsc/dependencies.txt')
 except Exception as e:
     error(str(e))
 

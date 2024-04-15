@@ -1,6 +1,6 @@
 from config import *
-from help import getSkill
 from healthBar import healthBar, manaBar, staminaBar
+from items import *
 
 class playerManager:
 
@@ -18,6 +18,8 @@ class playerManager:
         self.player.setAttributes(self.playerPhysicalAttributes())
 
         self.bonuses()
+
+        self.player.inventory.append([ironSword, 1])
 
         self.player.setBars(healthBar(self.player, color='green2'), manaBar(self.player, color="blue2"), staminaBar(self.player, color='green'))
 
@@ -94,5 +96,16 @@ class playerManager:
 
     def bonuses(self) -> None:
         self.player.applyBonus_stat('Con', 10)
-        self.player.applyBonus_skill(getSkill('000'))
 
+    def giveitem(self, items, player) -> None:
+        raise NotImplementedError("THE CODE BELOW DOENT WORK - ADDS TO MANY ITEMS TO THE INVENTORY(DOSNT ADD TO THE COUNTER MAKES NEW ITEM)")
+        for item in items:
+            for e, i in enumerate(player.inventory):
+                print(e)
+                if i[0].name == item.name: # type: ignore
+                    player.inventory[e][1] += 1
+                    continue
+
+            player.inventory.append([item, 1])
+
+        input()
