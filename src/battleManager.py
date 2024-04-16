@@ -29,7 +29,7 @@ class battleManager:
 
             self.attacks(self.player, self.enemy)
 
-            input()
+            input("> ")
 
             system('cls')
 

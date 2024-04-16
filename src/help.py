@@ -7,9 +7,10 @@ def statHelp(*args) -> None:
         for l in statHelp.readlines():
             print(l)
 
-def creationHelp(*args) -> None:
-    statHelp()
-    print('\nEnter \'q\' to quit')
+def help() -> None:
+    while True:
+
+        input("> ")
 
 def error(msg:str ="Error!!!") -> None:
     logged = logError(msg)

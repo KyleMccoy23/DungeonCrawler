@@ -16,22 +16,37 @@ class Game:
 
         self.battleManager = battleManager()
 
+        self.menu = True
+
         self.run()
 
         
     def run(self) -> None:
-        new:str = input('Do you what to start a new game (y/n): ')
+        while self.menu:
+            print(f"1. Start New Game\n"
+                f"2. Load Game\n"
+                f"3. Help\n"
+                f"4. Quit")
 
-        system('cls')
+            new:str = input("# ")
 
-        match(new.lower()):
-            case 'y':
-                self.newGame()
-            case 'n':
-                self.loadGame()
-            case _:
-                try:error("Invalid input (Game.run 'Start')")
-                except:self.run()
+            system('cls')
+
+            if not new == '': self.run()
+
+            match(new):
+                case 1:
+                    self.newGame()
+                case 2:
+                    self.loadGame()
+                case 3:
+                    help()
+                    self.run()
+                case 4:
+                    quit(0)
+                case _:
+                    try:error("Invalid input (Game.run 'Start')")
+                    except:self.run()
 
         # self.pManager.giveitem([stick, iron, iron], player=self.player)
         self.battleManager.startBattle(self.player, self.enemy)
