@@ -3,7 +3,7 @@ from player import Player
 import pickle
 from help import error
 
-mainPath = "../rsc/playerData/"
+mainPath = "rsc/playerData/"
 
 def getPlayer(name:str) -> Player|None:
     try:

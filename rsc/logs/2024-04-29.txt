@@ -1,0 +1,10 @@
+
+no player(file)
+Invalid input (Game.run 'Start')
+Invalid input (Game.run 'Start')
+Invalid input (Game.run 'Start')
+Invalid input (Game.run 'Start')
+Invalid input (Game.run 'Start')
+Invalid input (Game.run 'Start')
+Invalid input (Game.run 'Start')
+Invalid input (Game.run 'Start')

@@ -3,11 +3,11 @@ from sys import exit
 from help import error
 from time import sleep
 
-mainPath = "../rsc/playerData/"
+mainPath = "rsc/playerData/"
 
 try:
     system('python.exe -m pip install --upgrade pip')
-    system('pip install -r ../rsc/dependencies.txt')
+    system('pip install -r rsc/dependencies.txt')
 except Exception as e:
     error(str(e))
 

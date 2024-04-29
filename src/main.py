@@ -32,19 +32,28 @@ class Game:
 
             system('cls')
 
-            if not new == '': self.run()
+            if new == '': self.run()
 
             match(new):
-                case 1:
+                case '1':
+                    input("option 1")
+                    self.menu = False
                     self.newGame()
-                case 2:
+                case '2':
+                    input("option 2")
+                    self.menu = False
                     self.loadGame()
-                case 3:
+                case '3':
+                    input("option 3")
                     help()
                     self.run()
-                case 4:
+                case '4':
+                    input("option 4")
+                    self.menu = False
                     quit(0)
                 case _:
+                    print(new)
+                    input("HELP ME PLZ GONNA KMS")
                     try:error("Invalid input (Game.run 'Start')")
                     except:self.run()
 
@@ -77,7 +86,6 @@ class Game:
             print("No player of that name:", e)
             sleep(2)
             self.run()
-
 
 
 def main() -> None:

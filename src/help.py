@@ -1,9 +1,9 @@
 import datetime
-mainPath = "../rsc/playerData/"
+mainPath = "rsc/playerData/"
 
 
 def statHelp(*args) -> None:
-    with open('../rsc/player-stat.txt', 'r') as statHelp:
+    with open('rsc/player-stat.txt', 'r') as statHelp:
         for l in statHelp.readlines():
             print(l)
 

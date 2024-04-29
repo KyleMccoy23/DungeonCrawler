@@ -101,9 +101,11 @@ class playerManager:
         raise NotImplementedError("THE CODE BELOW DOENT WORK - ADDS TO MANY ITEMS TO THE INVENTORY(DOSNT ADD TO THE COUNTER MAKES NEW ITEM)")
         for item in items:
             for e, i in enumerate(player.inventory):
-                print(e)
+                print(player.inventory)
                 if i[0].name == item.name: # type: ignore
-                    player.inventory[e][1] += 1
+                    amount = player.inventory[e][1]
+                    amount += 1
+                    player.inventory[e][1] = amount
                     continue
 
             player.inventory.append([item, 1])
