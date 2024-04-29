@@ -1,5 +1,4 @@
 from os import system, listdir, path
-from sys import exit
 from help import error
 from time import sleep
 
@@ -7,7 +6,7 @@ mainPath = "rsc/playerData/"
 
 try:
     system('python.exe -m pip install --upgrade pip')
-    system('pip install -r rsc/dependencies.txt -q --log rsc/logs/pipLogs.txt')
+    system('pip install -r rsc/dependencies.txt -q') # --log rsc/logs/pipLogs.txt')
 except Exception as e:
     error(str(e))
 
