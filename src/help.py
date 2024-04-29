@@ -1,4 +1,5 @@
 import datetime
+from os import system
 mainPath = "rsc/playerData/"
 
 
@@ -9,8 +10,21 @@ def statHelp(*args) -> None:
 
 def help() -> None:
     while True:
+        print('''\t\tDungeon Crawlers Help Menu
 
-        input("> ")
+'#' means needs case sensitive input
+'>' input is optional
+              
+Enter 'q' or 'quit' to exit
+''')
+        h = input("> ").lower()
+
+        match h:
+            case 'q' | 'quit':
+                system('cls')
+                break
+
+        system('cls')
 
 def error(msg:str ="Error!!!") -> None:
     logged = logError(msg)

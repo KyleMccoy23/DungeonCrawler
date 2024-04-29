@@ -2,8 +2,8 @@ from config import *
 from playerManager import playerManager
 from battleManager import battleManager
 from file import *
+from help import help
 
-from items import stick, iron
 
 class Game:
     def __init__(self) -> None:
@@ -36,19 +36,15 @@ class Game:
 
             match(new):
                 case '1':
-                    input("option 1")
                     self.menu = False
                     self.newGame()
                 case '2':
-                    input("option 2")
                     self.menu = False
                     self.loadGame()
                 case '3':
-                    input("option 3")
                     help()
                     self.run()
                 case '4':
-                    input("option 4")
                     self.menu = False
                     quit(0)
                 case _:
@@ -87,11 +83,9 @@ class Game:
             sleep(2)
             self.run()
 
-
 def main() -> None:
     system('cls')
     g = Game()
-
 
 if __name__ == "__main__":
     main()

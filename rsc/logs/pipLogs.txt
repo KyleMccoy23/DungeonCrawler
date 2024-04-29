@@ -1,0 +1,832 @@
+2024-04-29T17:38:54,073 Using pip 24.0 from C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip (python 3.12)
+2024-04-29T17:38:54,074 Non-user install because site-packages writeable
+2024-04-29T17:38:54,132 Created temporary directory: C:\Users\ByteDesktop\AppData\Local\Temp\pip-build-tracker-sy03cd4x
+2024-04-29T17:38:54,133 Initialized build tracking at C:\Users\ByteDesktop\AppData\Local\Temp\pip-build-tracker-sy03cd4x
+2024-04-29T17:38:54,133 Created build tracker: C:\Users\ByteDesktop\AppData\Local\Temp\pip-build-tracker-sy03cd4x
+2024-04-29T17:38:54,133 Entered build tracker: C:\Users\ByteDesktop\AppData\Local\Temp\pip-build-tracker-sy03cd4x
+2024-04-29T17:38:54,133 Created temporary directory: C:\Users\ByteDesktop\AppData\Local\Temp\pip-install-buez4_en
+2024-04-29T17:38:54,140 Created temporary directory: C:\Users\ByteDesktop\AppData\Local\Temp\pip-ephem-wheel-cache-8pg6f3_y
+2024-04-29T17:38:54,173 1 location(s) to search for versions of pickle:
+2024-04-29T17:38:54,173 * https://pypi.org/simple/pickle/
+2024-04-29T17:38:54,173 Fetching project page and analyzing links: https://pypi.org/simple/pickle/
+2024-04-29T17:38:54,173 Getting page https://pypi.org/simple/pickle/
+2024-04-29T17:38:54,173 Found index url https://pypi.org/simple/
+2024-04-29T17:38:54,174 Looking up "https://pypi.org/simple/pickle/" in the cache
+2024-04-29T17:38:54,174 Request header has "max_age" as 0, cache bypassed
+2024-04-29T17:38:54,174 No cache entry available
+2024-04-29T17:38:54,175 Starting new HTTPS connection (1): pypi.org:443
+2024-04-29T17:38:54,511 https://pypi.org:443 "GET /simple/pickle/ HTTP/1.1" 404 13
+2024-04-29T17:38:54,512 Status code 404 not in (200, 203, 300, 301, 308)
+2024-04-29T17:38:54,512 Could not fetch URL https://pypi.org/simple/pickle/: 404 Client Error: Not Found for url: https://pypi.org/simple/pickle/ - skipping
+2024-04-29T17:38:54,512 Skipping link: not a file: https://pypi.org/simple/pickle/
+2024-04-29T17:38:54,513 Given no hashes to check 0 links for project 'pickle': discarding no candidates
+2024-04-29T17:38:54,513 ERROR: Could not find a version that satisfies the requirement pickle (from versions: none)
+2024-04-29T17:38:54,513 ERROR: No matching distribution found for pickle
+2024-04-29T17:38:54,514 Exception information:
+2024-04-29T17:38:54,514 Traceback (most recent call last):
+2024-04-29T17:38:54,514   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_vendor\resolvelib\resolvers.py", line 397, in resolve
+2024-04-29T17:38:54,514     self._add_to_criteria(self.state.criteria, r, parent=None)
+2024-04-29T17:38:54,514   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_vendor\resolvelib\resolvers.py", line 174, in _add_to_criteria
+2024-04-29T17:38:54,514     raise RequirementsConflicted(criterion)
+2024-04-29T17:38:54,514 pip._vendor.resolvelib.resolvers.RequirementsConflicted: Requirements conflict: SpecifierRequirement('pickle')
+2024-04-29T17:38:54,514 
+2024-04-29T17:38:54,514 During handling of the above exception, another exception occurred:
+2024-04-29T17:38:54,514 
+2024-04-29T17:38:54,514 Traceback (most recent call last):
+2024-04-29T17:38:54,514   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_internal\resolution\resolvelib\resolver.py", line 95, in resolve
+2024-04-29T17:38:54,514     result = self._result = resolver.resolve(
+2024-04-29T17:38:54,514                             ^^^^^^^^^^^^^^^^^
+2024-04-29T17:38:54,514   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_vendor\resolvelib\resolvers.py", line 546, in resolve
+2024-04-29T17:38:54,514     state = resolution.resolve(requirements, max_rounds=max_rounds)
+2024-04-29T17:38:54,514             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-04-29T17:38:54,514   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_vendor\resolvelib\resolvers.py", line 399, in resolve
+2024-04-29T17:38:54,514     raise ResolutionImpossible(e.criterion.information)
+2024-04-29T17:38:54,514 pip._vendor.resolvelib.resolvers.ResolutionImpossible: [RequirementInformation(requirement=SpecifierRequirement('pickle'), parent=None)]
+2024-04-29T17:38:54,514 
+2024-04-29T17:38:54,514 The above exception was the direct cause of the following exception:
+2024-04-29T17:38:54,514 
+2024-04-29T17:38:54,514 Traceback (most recent call last):
+2024-04-29T17:38:54,514   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_internal\cli\base_command.py", line 180, in exc_logging_wrapper
+2024-04-29T17:38:54,514     status = run_func(*args)
+2024-04-29T17:38:54,514              ^^^^^^^^^^^^^^^
+2024-04-29T17:38:54,514   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_internal\cli\req_command.py", line 245, in wrapper
+2024-04-29T17:38:54,514     return func(self, options, args)
+2024-04-29T17:38:54,514            ^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-04-29T17:38:54,514   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_internal\commands\install.py", line 377, in run
+2024-04-29T17:38:54,514     requirement_set = resolver.resolve(
+2024-04-29T17:38:54,514                       ^^^^^^^^^^^^^^^^^
+2024-04-29T17:38:54,514   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_internal\resolution\resolvelib\resolver.py", line 104, in resolve
+2024-04-29T17:38:54,514     raise error from e
+2024-04-29T17:38:54,514 pip._internal.exceptions.DistributionNotFound: No matching distribution found for pickle
+2024-04-29T17:38:54,555 Remote version of pip: 24.0
+2024-04-29T17:38:54,555 Local version of pip:  24.0
+2024-04-29T17:38:54,571 Was pip installed by pip? True
+2024-04-29T17:38:54,572 Removed build tracker: 'C:\\Users\\ByteDesktop\\AppData\\Local\\Temp\\pip-build-tracker-sy03cd4x'
+2024-04-29T17:39:33,909 Using pip 24.0 from C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip (python 3.12)
+2024-04-29T17:39:33,910 Non-user install because site-packages writeable
+2024-04-29T17:39:33,969 Created temporary directory: C:\Users\ByteDesktop\AppData\Local\Temp\pip-build-tracker-l5egnawp
+2024-04-29T17:39:33,969 Initialized build tracking at C:\Users\ByteDesktop\AppData\Local\Temp\pip-build-tracker-l5egnawp
+2024-04-29T17:39:33,969 Created build tracker: C:\Users\ByteDesktop\AppData\Local\Temp\pip-build-tracker-l5egnawp
+2024-04-29T17:39:33,969 Entered build tracker: C:\Users\ByteDesktop\AppData\Local\Temp\pip-build-tracker-l5egnawp
+2024-04-29T17:39:33,970 Created temporary directory: C:\Users\ByteDesktop\AppData\Local\Temp\pip-install-_9nvy1u_
+2024-04-29T17:39:33,971 Created temporary directory: C:\Users\ByteDesktop\AppData\Local\Temp\pip-ephem-wheel-cache-5qeh1ehm
+2024-04-29T17:39:34,010 1 location(s) to search for versions of pickle:
+2024-04-29T17:39:34,010 * https://pypi.org/simple/pickle/
+2024-04-29T17:39:34,010 Fetching project page and analyzing links: https://pypi.org/simple/pickle/
+2024-04-29T17:39:34,010 Getting page https://pypi.org/simple/pickle/
+2024-04-29T17:39:34,011 Found index url https://pypi.org/simple/
+2024-04-29T17:39:34,012 Looking up "https://pypi.org/simple/pickle/" in the cache
+2024-04-29T17:39:34,012 Request header has "max_age" as 0, cache bypassed
+2024-04-29T17:39:34,013 No cache entry available
+2024-04-29T17:39:34,013 Starting new HTTPS connection (1): pypi.org:443
+2024-04-29T17:39:34,314 https://pypi.org:443 "GET /simple/pickle/ HTTP/1.1" 404 13
+2024-04-29T17:39:34,315 Status code 404 not in (200, 203, 300, 301, 308)
+2024-04-29T17:39:34,316 Could not fetch URL https://pypi.org/simple/pickle/: 404 Client Error: Not Found for url: https://pypi.org/simple/pickle/ - skipping
+2024-04-29T17:39:34,316 Skipping link: not a file: https://pypi.org/simple/pickle/
+2024-04-29T17:39:34,316 Given no hashes to check 0 links for project 'pickle': discarding no candidates
+2024-04-29T17:39:34,316 ERROR: Could not find a version that satisfies the requirement pickle (from versions: none)
+2024-04-29T17:39:34,317 ERROR: No matching distribution found for pickle
+2024-04-29T17:39:34,317 Exception information:
+2024-04-29T17:39:34,317 Traceback (most recent call last):
+2024-04-29T17:39:34,317   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_vendor\resolvelib\resolvers.py", line 397, in resolve
+2024-04-29T17:39:34,317     self._add_to_criteria(self.state.criteria, r, parent=None)
+2024-04-29T17:39:34,317   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_vendor\resolvelib\resolvers.py", line 174, in _add_to_criteria
+2024-04-29T17:39:34,317     raise RequirementsConflicted(criterion)
+2024-04-29T17:39:34,317 pip._vendor.resolvelib.resolvers.RequirementsConflicted: Requirements conflict: SpecifierRequirement('pickle')
+2024-04-29T17:39:34,317 
+2024-04-29T17:39:34,317 During handling of the above exception, another exception occurred:
+2024-04-29T17:39:34,317 
+2024-04-29T17:39:34,317 Traceback (most recent call last):
+2024-04-29T17:39:34,317   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_internal\resolution\resolvelib\resolver.py", line 95, in resolve
+2024-04-29T17:39:34,317     result = self._result = resolver.resolve(
+2024-04-29T17:39:34,317                             ^^^^^^^^^^^^^^^^^
+2024-04-29T17:39:34,317   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_vendor\resolvelib\resolvers.py", line 546, in resolve
+2024-04-29T17:39:34,317     state = resolution.resolve(requirements, max_rounds=max_rounds)
+2024-04-29T17:39:34,317             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-04-29T17:39:34,317   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_vendor\resolvelib\resolvers.py", line 399, in resolve
+2024-04-29T17:39:34,317     raise ResolutionImpossible(e.criterion.information)
+2024-04-29T17:39:34,317 pip._vendor.resolvelib.resolvers.ResolutionImpossible: [RequirementInformation(requirement=SpecifierRequirement('pickle'), parent=None)]
+2024-04-29T17:39:34,317 
+2024-04-29T17:39:34,317 The above exception was the direct cause of the following exception:
+2024-04-29T17:39:34,317 
+2024-04-29T17:39:34,317 Traceback (most recent call last):
+2024-04-29T17:39:34,317   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_internal\cli\base_command.py", line 180, in exc_logging_wrapper
+2024-04-29T17:39:34,317     status = run_func(*args)
+2024-04-29T17:39:34,317              ^^^^^^^^^^^^^^^
+2024-04-29T17:39:34,317   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_internal\cli\req_command.py", line 245, in wrapper
+2024-04-29T17:39:34,317     return func(self, options, args)
+2024-04-29T17:39:34,317            ^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-04-29T17:39:34,317   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_internal\commands\install.py", line 377, in run
+2024-04-29T17:39:34,317     requirement_set = resolver.resolve(
+2024-04-29T17:39:34,317                       ^^^^^^^^^^^^^^^^^
+2024-04-29T17:39:34,317   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_internal\resolution\resolvelib\resolver.py", line 104, in resolve
+2024-04-29T17:39:34,317     raise error from e
+2024-04-29T17:39:34,317 pip._internal.exceptions.DistributionNotFound: No matching distribution found for pickle
+2024-04-29T17:39:34,359 Remote version of pip: 24.0
+2024-04-29T17:39:34,359 Local version of pip:  24.0
+2024-04-29T17:39:34,375 Was pip installed by pip? True
+2024-04-29T17:39:34,375 Removed build tracker: 'C:\\Users\\ByteDesktop\\AppData\\Local\\Temp\\pip-build-tracker-l5egnawp'
+2024-04-29T17:39:52,616 Using pip 24.0 from C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip (python 3.12)
+2024-04-29T17:39:52,617 Non-user install because site-packages writeable
+2024-04-29T17:39:52,675 Created temporary directory: C:\Users\ByteDesktop\AppData\Local\Temp\pip-build-tracker-zjhs2kun
+2024-04-29T17:39:52,675 Initialized build tracking at C:\Users\ByteDesktop\AppData\Local\Temp\pip-build-tracker-zjhs2kun
+2024-04-29T17:39:52,675 Created build tracker: C:\Users\ByteDesktop\AppData\Local\Temp\pip-build-tracker-zjhs2kun
+2024-04-29T17:39:52,675 Entered build tracker: C:\Users\ByteDesktop\AppData\Local\Temp\pip-build-tracker-zjhs2kun
+2024-04-29T17:39:52,676 Created temporary directory: C:\Users\ByteDesktop\AppData\Local\Temp\pip-install-grsoft7p
+2024-04-29T17:39:52,677 Created temporary directory: C:\Users\ByteDesktop\AppData\Local\Temp\pip-ephem-wheel-cache-pe7i3v43
+2024-04-29T17:39:52,709 1 location(s) to search for versions of pickle:
+2024-04-29T17:39:52,709 * https://pypi.org/simple/pickle/
+2024-04-29T17:39:52,709 Fetching project page and analyzing links: https://pypi.org/simple/pickle/
+2024-04-29T17:39:52,709 Getting page https://pypi.org/simple/pickle/
+2024-04-29T17:39:52,709 Found index url https://pypi.org/simple/
+2024-04-29T17:39:52,710 Looking up "https://pypi.org/simple/pickle/" in the cache
+2024-04-29T17:39:52,710 Request header has "max_age" as 0, cache bypassed
+2024-04-29T17:39:52,711 No cache entry available
+2024-04-29T17:39:52,711 Starting new HTTPS connection (1): pypi.org:443
+2024-04-29T17:39:53,029 https://pypi.org:443 "GET /simple/pickle/ HTTP/1.1" 404 13
+2024-04-29T17:39:53,030 Status code 404 not in (200, 203, 300, 301, 308)
+2024-04-29T17:39:53,030 Could not fetch URL https://pypi.org/simple/pickle/: 404 Client Error: Not Found for url: https://pypi.org/simple/pickle/ - skipping
+2024-04-29T17:39:53,030 Skipping link: not a file: https://pypi.org/simple/pickle/
+2024-04-29T17:39:53,030 Given no hashes to check 0 links for project 'pickle': discarding no candidates
+2024-04-29T17:39:53,030 ERROR: Could not find a version that satisfies the requirement pickle (from versions: none)
+2024-04-29T17:39:53,031 ERROR: No matching distribution found for pickle
+2024-04-29T17:39:53,031 Exception information:
+2024-04-29T17:39:53,031 Traceback (most recent call last):
+2024-04-29T17:39:53,031   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_vendor\resolvelib\resolvers.py", line 397, in resolve
+2024-04-29T17:39:53,031     self._add_to_criteria(self.state.criteria, r, parent=None)
+2024-04-29T17:39:53,031   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_vendor\resolvelib\resolvers.py", line 174, in _add_to_criteria
+2024-04-29T17:39:53,031     raise RequirementsConflicted(criterion)
+2024-04-29T17:39:53,031 pip._vendor.resolvelib.resolvers.RequirementsConflicted: Requirements conflict: SpecifierRequirement('pickle')
+2024-04-29T17:39:53,031 
+2024-04-29T17:39:53,031 During handling of the above exception, another exception occurred:
+2024-04-29T17:39:53,031 
+2024-04-29T17:39:53,031 Traceback (most recent call last):
+2024-04-29T17:39:53,031   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_internal\resolution\resolvelib\resolver.py", line 95, in resolve
+2024-04-29T17:39:53,031     result = self._result = resolver.resolve(
+2024-04-29T17:39:53,031                             ^^^^^^^^^^^^^^^^^
+2024-04-29T17:39:53,031   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_vendor\resolvelib\resolvers.py", line 546, in resolve
+2024-04-29T17:39:53,031     state = resolution.resolve(requirements, max_rounds=max_rounds)
+2024-04-29T17:39:53,031             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-04-29T17:39:53,031   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_vendor\resolvelib\resolvers.py", line 399, in resolve
+2024-04-29T17:39:53,031     raise ResolutionImpossible(e.criterion.information)
+2024-04-29T17:39:53,031 pip._vendor.resolvelib.resolvers.ResolutionImpossible: [RequirementInformation(requirement=SpecifierRequirement('pickle'), parent=None)]
+2024-04-29T17:39:53,031 
+2024-04-29T17:39:53,031 The above exception was the direct cause of the following exception:
+2024-04-29T17:39:53,031 
+2024-04-29T17:39:53,031 Traceback (most recent call last):
+2024-04-29T17:39:53,031   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_internal\cli\base_command.py", line 180, in exc_logging_wrapper
+2024-04-29T17:39:53,031     status = run_func(*args)
+2024-04-29T17:39:53,031              ^^^^^^^^^^^^^^^
+2024-04-29T17:39:53,031   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_internal\cli\req_command.py", line 245, in wrapper
+2024-04-29T17:39:53,031     return func(self, options, args)
+2024-04-29T17:39:53,031            ^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-04-29T17:39:53,031   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_internal\commands\install.py", line 377, in run
+2024-04-29T17:39:53,031     requirement_set = resolver.resolve(
+2024-04-29T17:39:53,031                       ^^^^^^^^^^^^^^^^^
+2024-04-29T17:39:53,031   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_internal\resolution\resolvelib\resolver.py", line 104, in resolve
+2024-04-29T17:39:53,031     raise error from e
+2024-04-29T17:39:53,031 pip._internal.exceptions.DistributionNotFound: No matching distribution found for pickle
+2024-04-29T17:39:53,073 Remote version of pip: 24.0
+2024-04-29T17:39:53,073 Local version of pip:  24.0
+2024-04-29T17:39:53,089 Was pip installed by pip? True
+2024-04-29T17:39:53,089 Removed build tracker: 'C:\\Users\\ByteDesktop\\AppData\\Local\\Temp\\pip-build-tracker-zjhs2kun'
+2024-04-29T17:40:11,273 Using pip 24.0 from C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip (python 3.12)
+2024-04-29T17:40:11,274 Non-user install because site-packages writeable
+2024-04-29T17:40:11,332 Created temporary directory: C:\Users\ByteDesktop\AppData\Local\Temp\pip-build-tracker-qi3_fdye
+2024-04-29T17:40:11,332 Initialized build tracking at C:\Users\ByteDesktop\AppData\Local\Temp\pip-build-tracker-qi3_fdye
+2024-04-29T17:40:11,332 Created build tracker: C:\Users\ByteDesktop\AppData\Local\Temp\pip-build-tracker-qi3_fdye
+2024-04-29T17:40:11,332 Entered build tracker: C:\Users\ByteDesktop\AppData\Local\Temp\pip-build-tracker-qi3_fdye
+2024-04-29T17:40:11,333 Created temporary directory: C:\Users\ByteDesktop\AppData\Local\Temp\pip-install-8nv2tu3u
+2024-04-29T17:40:11,334 Created temporary directory: C:\Users\ByteDesktop\AppData\Local\Temp\pip-ephem-wheel-cache-bhtthnjf
+2024-04-29T17:40:11,366 1 location(s) to search for versions of pickle:
+2024-04-29T17:40:11,366 * https://pypi.org/simple/pickle/
+2024-04-29T17:40:11,367 Fetching project page and analyzing links: https://pypi.org/simple/pickle/
+2024-04-29T17:40:11,367 Getting page https://pypi.org/simple/pickle/
+2024-04-29T17:40:11,367 Found index url https://pypi.org/simple/
+2024-04-29T17:40:11,368 Looking up "https://pypi.org/simple/pickle/" in the cache
+2024-04-29T17:40:11,368 Request header has "max_age" as 0, cache bypassed
+2024-04-29T17:40:11,368 No cache entry available
+2024-04-29T17:40:11,369 Starting new HTTPS connection (1): pypi.org:443
+2024-04-29T17:40:11,711 https://pypi.org:443 "GET /simple/pickle/ HTTP/1.1" 404 13
+2024-04-29T17:40:11,712 Status code 404 not in (200, 203, 300, 301, 308)
+2024-04-29T17:40:11,712 Could not fetch URL https://pypi.org/simple/pickle/: 404 Client Error: Not Found for url: https://pypi.org/simple/pickle/ - skipping
+2024-04-29T17:40:11,712 Skipping link: not a file: https://pypi.org/simple/pickle/
+2024-04-29T17:40:11,712 Given no hashes to check 0 links for project 'pickle': discarding no candidates
+2024-04-29T17:40:11,713 ERROR: Could not find a version that satisfies the requirement pickle (from versions: none)
+2024-04-29T17:40:11,713 ERROR: No matching distribution found for pickle
+2024-04-29T17:40:11,713 Exception information:
+2024-04-29T17:40:11,713 Traceback (most recent call last):
+2024-04-29T17:40:11,713   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_vendor\resolvelib\resolvers.py", line 397, in resolve
+2024-04-29T17:40:11,713     self._add_to_criteria(self.state.criteria, r, parent=None)
+2024-04-29T17:40:11,713   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_vendor\resolvelib\resolvers.py", line 174, in _add_to_criteria
+2024-04-29T17:40:11,713     raise RequirementsConflicted(criterion)
+2024-04-29T17:40:11,713 pip._vendor.resolvelib.resolvers.RequirementsConflicted: Requirements conflict: SpecifierRequirement('pickle')
+2024-04-29T17:40:11,713 
+2024-04-29T17:40:11,713 During handling of the above exception, another exception occurred:
+2024-04-29T17:40:11,713 
+2024-04-29T17:40:11,713 Traceback (most recent call last):
+2024-04-29T17:40:11,713   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_internal\resolution\resolvelib\resolver.py", line 95, in resolve
+2024-04-29T17:40:11,713     result = self._result = resolver.resolve(
+2024-04-29T17:40:11,713                             ^^^^^^^^^^^^^^^^^
+2024-04-29T17:40:11,713   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_vendor\resolvelib\resolvers.py", line 546, in resolve
+2024-04-29T17:40:11,713     state = resolution.resolve(requirements, max_rounds=max_rounds)
+2024-04-29T17:40:11,713             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-04-29T17:40:11,713   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_vendor\resolvelib\resolvers.py", line 399, in resolve
+2024-04-29T17:40:11,713     raise ResolutionImpossible(e.criterion.information)
+2024-04-29T17:40:11,713 pip._vendor.resolvelib.resolvers.ResolutionImpossible: [RequirementInformation(requirement=SpecifierRequirement('pickle'), parent=None)]
+2024-04-29T17:40:11,713 
+2024-04-29T17:40:11,713 The above exception was the direct cause of the following exception:
+2024-04-29T17:40:11,713 
+2024-04-29T17:40:11,713 Traceback (most recent call last):
+2024-04-29T17:40:11,713   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_internal\cli\base_command.py", line 180, in exc_logging_wrapper
+2024-04-29T17:40:11,713     status = run_func(*args)
+2024-04-29T17:40:11,713              ^^^^^^^^^^^^^^^
+2024-04-29T17:40:11,713   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_internal\cli\req_command.py", line 245, in wrapper
+2024-04-29T17:40:11,713     return func(self, options, args)
+2024-04-29T17:40:11,713            ^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-04-29T17:40:11,713   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_internal\commands\install.py", line 377, in run
+2024-04-29T17:40:11,713     requirement_set = resolver.resolve(
+2024-04-29T17:40:11,713                       ^^^^^^^^^^^^^^^^^
+2024-04-29T17:40:11,713   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_internal\resolution\resolvelib\resolver.py", line 104, in resolve
+2024-04-29T17:40:11,713     raise error from e
+2024-04-29T17:40:11,713 pip._internal.exceptions.DistributionNotFound: No matching distribution found for pickle
+2024-04-29T17:40:11,755 Remote version of pip: 24.0
+2024-04-29T17:40:11,755 Local version of pip:  24.0
+2024-04-29T17:40:11,771 Was pip installed by pip? True
+2024-04-29T17:40:11,772 Removed build tracker: 'C:\\Users\\ByteDesktop\\AppData\\Local\\Temp\\pip-build-tracker-qi3_fdye'
+2024-04-29T17:41:18,796 Using pip 24.0 from C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip (python 3.12)
+2024-04-29T17:41:18,797 Non-user install because site-packages writeable
+2024-04-29T17:41:18,855 Created temporary directory: C:\Users\ByteDesktop\AppData\Local\Temp\pip-build-tracker-8qnyiaxx
+2024-04-29T17:41:18,855 Initialized build tracking at C:\Users\ByteDesktop\AppData\Local\Temp\pip-build-tracker-8qnyiaxx
+2024-04-29T17:41:18,856 Created build tracker: C:\Users\ByteDesktop\AppData\Local\Temp\pip-build-tracker-8qnyiaxx
+2024-04-29T17:41:18,856 Entered build tracker: C:\Users\ByteDesktop\AppData\Local\Temp\pip-build-tracker-8qnyiaxx
+2024-04-29T17:41:18,856 Created temporary directory: C:\Users\ByteDesktop\AppData\Local\Temp\pip-install-cdd8v_wt
+2024-04-29T17:41:18,858 Created temporary directory: C:\Users\ByteDesktop\AppData\Local\Temp\pip-ephem-wheel-cache-lc51xaaf
+2024-04-29T17:41:18,889 1 location(s) to search for versions of pickle:
+2024-04-29T17:41:18,889 * https://pypi.org/simple/pickle/
+2024-04-29T17:41:18,889 Fetching project page and analyzing links: https://pypi.org/simple/pickle/
+2024-04-29T17:41:18,889 Getting page https://pypi.org/simple/pickle/
+2024-04-29T17:41:18,890 Found index url https://pypi.org/simple/
+2024-04-29T17:41:18,891 Looking up "https://pypi.org/simple/pickle/" in the cache
+2024-04-29T17:41:18,891 Request header has "max_age" as 0, cache bypassed
+2024-04-29T17:41:18,891 No cache entry available
+2024-04-29T17:41:18,891 Starting new HTTPS connection (1): pypi.org:443
+2024-04-29T17:41:19,230 https://pypi.org:443 "GET /simple/pickle/ HTTP/1.1" 404 13
+2024-04-29T17:41:19,231 Status code 404 not in (200, 203, 300, 301, 308)
+2024-04-29T17:41:19,231 Could not fetch URL https://pypi.org/simple/pickle/: 404 Client Error: Not Found for url: https://pypi.org/simple/pickle/ - skipping
+2024-04-29T17:41:19,231 Skipping link: not a file: https://pypi.org/simple/pickle/
+2024-04-29T17:41:19,232 Given no hashes to check 0 links for project 'pickle': discarding no candidates
+2024-04-29T17:41:19,232 ERROR: Could not find a version that satisfies the requirement pickle (from versions: none)
+2024-04-29T17:41:19,232 ERROR: No matching distribution found for pickle
+2024-04-29T17:41:19,233 Exception information:
+2024-04-29T17:41:19,233 Traceback (most recent call last):
+2024-04-29T17:41:19,233   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_vendor\resolvelib\resolvers.py", line 397, in resolve
+2024-04-29T17:41:19,233     self._add_to_criteria(self.state.criteria, r, parent=None)
+2024-04-29T17:41:19,233   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_vendor\resolvelib\resolvers.py", line 174, in _add_to_criteria
+2024-04-29T17:41:19,233     raise RequirementsConflicted(criterion)
+2024-04-29T17:41:19,233 pip._vendor.resolvelib.resolvers.RequirementsConflicted: Requirements conflict: SpecifierRequirement('pickle')
+2024-04-29T17:41:19,233 
+2024-04-29T17:41:19,233 During handling of the above exception, another exception occurred:
+2024-04-29T17:41:19,233 
+2024-04-29T17:41:19,233 Traceback (most recent call last):
+2024-04-29T17:41:19,233   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_internal\resolution\resolvelib\resolver.py", line 95, in resolve
+2024-04-29T17:41:19,233     result = self._result = resolver.resolve(
+2024-04-29T17:41:19,233                             ^^^^^^^^^^^^^^^^^
+2024-04-29T17:41:19,233   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_vendor\resolvelib\resolvers.py", line 546, in resolve
+2024-04-29T17:41:19,233     state = resolution.resolve(requirements, max_rounds=max_rounds)
+2024-04-29T17:41:19,233             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-04-29T17:41:19,233   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_vendor\resolvelib\resolvers.py", line 399, in resolve
+2024-04-29T17:41:19,233     raise ResolutionImpossible(e.criterion.information)
+2024-04-29T17:41:19,233 pip._vendor.resolvelib.resolvers.ResolutionImpossible: [RequirementInformation(requirement=SpecifierRequirement('pickle'), parent=None)]
+2024-04-29T17:41:19,233 
+2024-04-29T17:41:19,233 The above exception was the direct cause of the following exception:
+2024-04-29T17:41:19,233 
+2024-04-29T17:41:19,233 Traceback (most recent call last):
+2024-04-29T17:41:19,233   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_internal\cli\base_command.py", line 180, in exc_logging_wrapper
+2024-04-29T17:41:19,233     status = run_func(*args)
+2024-04-29T17:41:19,233              ^^^^^^^^^^^^^^^
+2024-04-29T17:41:19,233   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_internal\cli\req_command.py", line 245, in wrapper
+2024-04-29T17:41:19,233     return func(self, options, args)
+2024-04-29T17:41:19,233            ^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-04-29T17:41:19,233   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_internal\commands\install.py", line 377, in run
+2024-04-29T17:41:19,233     requirement_set = resolver.resolve(
+2024-04-29T17:41:19,233                       ^^^^^^^^^^^^^^^^^
+2024-04-29T17:41:19,233   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_internal\resolution\resolvelib\resolver.py", line 104, in resolve
+2024-04-29T17:41:19,233     raise error from e
+2024-04-29T17:41:19,233 pip._internal.exceptions.DistributionNotFound: No matching distribution found for pickle
+2024-04-29T17:41:19,274 Remote version of pip: 24.0
+2024-04-29T17:41:19,274 Local version of pip:  24.0
+2024-04-29T17:41:19,291 Was pip installed by pip? True
+2024-04-29T17:41:19,291 Removed build tracker: 'C:\\Users\\ByteDesktop\\AppData\\Local\\Temp\\pip-build-tracker-8qnyiaxx'
+2024-04-29T17:42:45,948 Using pip 24.0 from C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip (python 3.12)
+2024-04-29T17:42:45,949 Non-user install because site-packages writeable
+2024-04-29T17:42:46,007 Created temporary directory: C:\Users\ByteDesktop\AppData\Local\Temp\pip-build-tracker-v3ph0cwv
+2024-04-29T17:42:46,007 Initialized build tracking at C:\Users\ByteDesktop\AppData\Local\Temp\pip-build-tracker-v3ph0cwv
+2024-04-29T17:42:46,007 Created build tracker: C:\Users\ByteDesktop\AppData\Local\Temp\pip-build-tracker-v3ph0cwv
+2024-04-29T17:42:46,007 Entered build tracker: C:\Users\ByteDesktop\AppData\Local\Temp\pip-build-tracker-v3ph0cwv
+2024-04-29T17:42:46,008 Created temporary directory: C:\Users\ByteDesktop\AppData\Local\Temp\pip-install-dung7aed
+2024-04-29T17:42:46,009 Created temporary directory: C:\Users\ByteDesktop\AppData\Local\Temp\pip-ephem-wheel-cache-0917z8bg
+2024-04-29T17:42:46,049 1 location(s) to search for versions of pickle:
+2024-04-29T17:42:46,049 * https://pypi.org/simple/pickle/
+2024-04-29T17:42:46,049 Fetching project page and analyzing links: https://pypi.org/simple/pickle/
+2024-04-29T17:42:46,049 Getting page https://pypi.org/simple/pickle/
+2024-04-29T17:42:46,049 Found index url https://pypi.org/simple/
+2024-04-29T17:42:46,050 Looking up "https://pypi.org/simple/pickle/" in the cache
+2024-04-29T17:42:46,051 Request header has "max_age" as 0, cache bypassed
+2024-04-29T17:42:46,051 No cache entry available
+2024-04-29T17:42:46,051 Starting new HTTPS connection (1): pypi.org:443
+2024-04-29T17:42:46,408 https://pypi.org:443 "GET /simple/pickle/ HTTP/1.1" 404 13
+2024-04-29T17:42:46,409 Status code 404 not in (200, 203, 300, 301, 308)
+2024-04-29T17:42:46,409 Could not fetch URL https://pypi.org/simple/pickle/: 404 Client Error: Not Found for url: https://pypi.org/simple/pickle/ - skipping
+2024-04-29T17:42:46,410 Skipping link: not a file: https://pypi.org/simple/pickle/
+2024-04-29T17:42:46,410 Given no hashes to check 0 links for project 'pickle': discarding no candidates
+2024-04-29T17:42:46,410 ERROR: Could not find a version that satisfies the requirement pickle (from versions: none)
+2024-04-29T17:42:46,411 ERROR: No matching distribution found for pickle
+2024-04-29T17:42:46,411 Exception information:
+2024-04-29T17:42:46,411 Traceback (most recent call last):
+2024-04-29T17:42:46,411   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_vendor\resolvelib\resolvers.py", line 397, in resolve
+2024-04-29T17:42:46,411     self._add_to_criteria(self.state.criteria, r, parent=None)
+2024-04-29T17:42:46,411   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_vendor\resolvelib\resolvers.py", line 174, in _add_to_criteria
+2024-04-29T17:42:46,411     raise RequirementsConflicted(criterion)
+2024-04-29T17:42:46,411 pip._vendor.resolvelib.resolvers.RequirementsConflicted: Requirements conflict: SpecifierRequirement('pickle')
+2024-04-29T17:42:46,411 
+2024-04-29T17:42:46,411 During handling of the above exception, another exception occurred:
+2024-04-29T17:42:46,411 
+2024-04-29T17:42:46,411 Traceback (most recent call last):
+2024-04-29T17:42:46,411   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_internal\resolution\resolvelib\resolver.py", line 95, in resolve
+2024-04-29T17:42:46,411     result = self._result = resolver.resolve(
+2024-04-29T17:42:46,411                             ^^^^^^^^^^^^^^^^^
+2024-04-29T17:42:46,411   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_vendor\resolvelib\resolvers.py", line 546, in resolve
+2024-04-29T17:42:46,411     state = resolution.resolve(requirements, max_rounds=max_rounds)
+2024-04-29T17:42:46,411             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-04-29T17:42:46,411   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_vendor\resolvelib\resolvers.py", line 399, in resolve
+2024-04-29T17:42:46,411     raise ResolutionImpossible(e.criterion.information)
+2024-04-29T17:42:46,411 pip._vendor.resolvelib.resolvers.ResolutionImpossible: [RequirementInformation(requirement=SpecifierRequirement('pickle'), parent=None)]
+2024-04-29T17:42:46,411 
+2024-04-29T17:42:46,411 The above exception was the direct cause of the following exception:
+2024-04-29T17:42:46,411 
+2024-04-29T17:42:46,411 Traceback (most recent call last):
+2024-04-29T17:42:46,411   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_internal\cli\base_command.py", line 180, in exc_logging_wrapper
+2024-04-29T17:42:46,411     status = run_func(*args)
+2024-04-29T17:42:46,411              ^^^^^^^^^^^^^^^
+2024-04-29T17:42:46,411   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_internal\cli\req_command.py", line 245, in wrapper
+2024-04-29T17:42:46,411     return func(self, options, args)
+2024-04-29T17:42:46,411            ^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-04-29T17:42:46,411   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_internal\commands\install.py", line 377, in run
+2024-04-29T17:42:46,411     requirement_set = resolver.resolve(
+2024-04-29T17:42:46,411                       ^^^^^^^^^^^^^^^^^
+2024-04-29T17:42:46,411   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_internal\resolution\resolvelib\resolver.py", line 104, in resolve
+2024-04-29T17:42:46,411     raise error from e
+2024-04-29T17:42:46,411 pip._internal.exceptions.DistributionNotFound: No matching distribution found for pickle
+2024-04-29T17:42:46,453 Remote version of pip: 24.0
+2024-04-29T17:42:46,453 Local version of pip:  24.0
+2024-04-29T17:42:46,469 Was pip installed by pip? True
+2024-04-29T17:42:46,470 Removed build tracker: 'C:\\Users\\ByteDesktop\\AppData\\Local\\Temp\\pip-build-tracker-v3ph0cwv'
+2024-04-29T17:42:58,561 Using pip 24.0 from C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip (python 3.12)
+2024-04-29T17:42:58,562 Non-user install because site-packages writeable
+2024-04-29T17:42:58,619 Created temporary directory: C:\Users\ByteDesktop\AppData\Local\Temp\pip-build-tracker-h8qc3l3d
+2024-04-29T17:42:58,620 Initialized build tracking at C:\Users\ByteDesktop\AppData\Local\Temp\pip-build-tracker-h8qc3l3d
+2024-04-29T17:42:58,620 Created build tracker: C:\Users\ByteDesktop\AppData\Local\Temp\pip-build-tracker-h8qc3l3d
+2024-04-29T17:42:58,620 Entered build tracker: C:\Users\ByteDesktop\AppData\Local\Temp\pip-build-tracker-h8qc3l3d
+2024-04-29T17:42:58,620 Created temporary directory: C:\Users\ByteDesktop\AppData\Local\Temp\pip-install-op790hm5
+2024-04-29T17:42:58,622 Created temporary directory: C:\Users\ByteDesktop\AppData\Local\Temp\pip-ephem-wheel-cache-sxwiyzpy
+2024-04-29T17:42:58,653 1 location(s) to search for versions of pickle:
+2024-04-29T17:42:58,653 * https://pypi.org/simple/pickle/
+2024-04-29T17:42:58,654 Fetching project page and analyzing links: https://pypi.org/simple/pickle/
+2024-04-29T17:42:58,654 Getting page https://pypi.org/simple/pickle/
+2024-04-29T17:42:58,654 Found index url https://pypi.org/simple/
+2024-04-29T17:42:58,655 Looking up "https://pypi.org/simple/pickle/" in the cache
+2024-04-29T17:42:58,655 Request header has "max_age" as 0, cache bypassed
+2024-04-29T17:42:58,655 No cache entry available
+2024-04-29T17:42:58,656 Starting new HTTPS connection (1): pypi.org:443
+2024-04-29T17:42:58,954 https://pypi.org:443 "GET /simple/pickle/ HTTP/1.1" 404 13
+2024-04-29T17:42:58,955 Status code 404 not in (200, 203, 300, 301, 308)
+2024-04-29T17:42:58,955 Could not fetch URL https://pypi.org/simple/pickle/: 404 Client Error: Not Found for url: https://pypi.org/simple/pickle/ - skipping
+2024-04-29T17:42:58,955 Skipping link: not a file: https://pypi.org/simple/pickle/
+2024-04-29T17:42:58,955 Given no hashes to check 0 links for project 'pickle': discarding no candidates
+2024-04-29T17:42:58,956 ERROR: Could not find a version that satisfies the requirement pickle (from versions: none)
+2024-04-29T17:42:58,956 ERROR: No matching distribution found for pickle
+2024-04-29T17:42:58,957 Exception information:
+2024-04-29T17:42:58,957 Traceback (most recent call last):
+2024-04-29T17:42:58,957   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_vendor\resolvelib\resolvers.py", line 397, in resolve
+2024-04-29T17:42:58,957     self._add_to_criteria(self.state.criteria, r, parent=None)
+2024-04-29T17:42:58,957   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_vendor\resolvelib\resolvers.py", line 174, in _add_to_criteria
+2024-04-29T17:42:58,957     raise RequirementsConflicted(criterion)
+2024-04-29T17:42:58,957 pip._vendor.resolvelib.resolvers.RequirementsConflicted: Requirements conflict: SpecifierRequirement('pickle')
+2024-04-29T17:42:58,957 
+2024-04-29T17:42:58,957 During handling of the above exception, another exception occurred:
+2024-04-29T17:42:58,957 
+2024-04-29T17:42:58,957 Traceback (most recent call last):
+2024-04-29T17:42:58,957   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_internal\resolution\resolvelib\resolver.py", line 95, in resolve
+2024-04-29T17:42:58,957     result = self._result = resolver.resolve(
+2024-04-29T17:42:58,957                             ^^^^^^^^^^^^^^^^^
+2024-04-29T17:42:58,957   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_vendor\resolvelib\resolvers.py", line 546, in resolve
+2024-04-29T17:42:58,957     state = resolution.resolve(requirements, max_rounds=max_rounds)
+2024-04-29T17:42:58,957             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-04-29T17:42:58,957   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_vendor\resolvelib\resolvers.py", line 399, in resolve
+2024-04-29T17:42:58,957     raise ResolutionImpossible(e.criterion.information)
+2024-04-29T17:42:58,957 pip._vendor.resolvelib.resolvers.ResolutionImpossible: [RequirementInformation(requirement=SpecifierRequirement('pickle'), parent=None)]
+2024-04-29T17:42:58,957 
+2024-04-29T17:42:58,957 The above exception was the direct cause of the following exception:
+2024-04-29T17:42:58,957 
+2024-04-29T17:42:58,957 Traceback (most recent call last):
+2024-04-29T17:42:58,957   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_internal\cli\base_command.py", line 180, in exc_logging_wrapper
+2024-04-29T17:42:58,957     status = run_func(*args)
+2024-04-29T17:42:58,957              ^^^^^^^^^^^^^^^
+2024-04-29T17:42:58,957   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_internal\cli\req_command.py", line 245, in wrapper
+2024-04-29T17:42:58,957     return func(self, options, args)
+2024-04-29T17:42:58,957            ^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-04-29T17:42:58,957   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_internal\commands\install.py", line 377, in run
+2024-04-29T17:42:58,957     requirement_set = resolver.resolve(
+2024-04-29T17:42:58,957                       ^^^^^^^^^^^^^^^^^
+2024-04-29T17:42:58,957   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_internal\resolution\resolvelib\resolver.py", line 104, in resolve
+2024-04-29T17:42:58,957     raise error from e
+2024-04-29T17:42:58,957 pip._internal.exceptions.DistributionNotFound: No matching distribution found for pickle
+2024-04-29T17:42:58,998 Remote version of pip: 24.0
+2024-04-29T17:42:58,998 Local version of pip:  24.0
+2024-04-29T17:42:59,015 Was pip installed by pip? True
+2024-04-29T17:42:59,015 Removed build tracker: 'C:\\Users\\ByteDesktop\\AppData\\Local\\Temp\\pip-build-tracker-h8qc3l3d'
+2024-04-29T17:43:23,726 Using pip 24.0 from C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip (python 3.12)
+2024-04-29T17:43:23,727 Non-user install because site-packages writeable
+2024-04-29T17:43:23,786 Created temporary directory: C:\Users\ByteDesktop\AppData\Local\Temp\pip-build-tracker-l0pyh6hi
+2024-04-29T17:43:23,786 Initialized build tracking at C:\Users\ByteDesktop\AppData\Local\Temp\pip-build-tracker-l0pyh6hi
+2024-04-29T17:43:23,786 Created build tracker: C:\Users\ByteDesktop\AppData\Local\Temp\pip-build-tracker-l0pyh6hi
+2024-04-29T17:43:23,786 Entered build tracker: C:\Users\ByteDesktop\AppData\Local\Temp\pip-build-tracker-l0pyh6hi
+2024-04-29T17:43:23,787 Created temporary directory: C:\Users\ByteDesktop\AppData\Local\Temp\pip-install-av9fosa8
+2024-04-29T17:43:23,788 Created temporary directory: C:\Users\ByteDesktop\AppData\Local\Temp\pip-ephem-wheel-cache-hslzhi9q
+2024-04-29T17:43:23,822 1 location(s) to search for versions of pickle:
+2024-04-29T17:43:23,822 * https://pypi.org/simple/pickle/
+2024-04-29T17:43:23,822 Fetching project page and analyzing links: https://pypi.org/simple/pickle/
+2024-04-29T17:43:23,822 Getting page https://pypi.org/simple/pickle/
+2024-04-29T17:43:23,823 Found index url https://pypi.org/simple/
+2024-04-29T17:43:23,823 Looking up "https://pypi.org/simple/pickle/" in the cache
+2024-04-29T17:43:23,824 Request header has "max_age" as 0, cache bypassed
+2024-04-29T17:43:23,824 No cache entry available
+2024-04-29T17:43:23,824 Starting new HTTPS connection (1): pypi.org:443
+2024-04-29T17:43:24,126 https://pypi.org:443 "GET /simple/pickle/ HTTP/1.1" 404 13
+2024-04-29T17:43:24,127 Status code 404 not in (200, 203, 300, 301, 308)
+2024-04-29T17:43:24,128 Could not fetch URL https://pypi.org/simple/pickle/: 404 Client Error: Not Found for url: https://pypi.org/simple/pickle/ - skipping
+2024-04-29T17:43:24,128 Skipping link: not a file: https://pypi.org/simple/pickle/
+2024-04-29T17:43:24,128 Given no hashes to check 0 links for project 'pickle': discarding no candidates
+2024-04-29T17:43:24,128 ERROR: Could not find a version that satisfies the requirement pickle (from versions: none)
+2024-04-29T17:43:24,129 ERROR: No matching distribution found for pickle
+2024-04-29T17:43:24,129 Exception information:
+2024-04-29T17:43:24,129 Traceback (most recent call last):
+2024-04-29T17:43:24,129   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_vendor\resolvelib\resolvers.py", line 397, in resolve
+2024-04-29T17:43:24,129     self._add_to_criteria(self.state.criteria, r, parent=None)
+2024-04-29T17:43:24,129   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_vendor\resolvelib\resolvers.py", line 174, in _add_to_criteria
+2024-04-29T17:43:24,129     raise RequirementsConflicted(criterion)
+2024-04-29T17:43:24,129 pip._vendor.resolvelib.resolvers.RequirementsConflicted: Requirements conflict: SpecifierRequirement('pickle')
+2024-04-29T17:43:24,129 
+2024-04-29T17:43:24,129 During handling of the above exception, another exception occurred:
+2024-04-29T17:43:24,129 
+2024-04-29T17:43:24,129 Traceback (most recent call last):
+2024-04-29T17:43:24,129   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_internal\resolution\resolvelib\resolver.py", line 95, in resolve
+2024-04-29T17:43:24,129     result = self._result = resolver.resolve(
+2024-04-29T17:43:24,129                             ^^^^^^^^^^^^^^^^^
+2024-04-29T17:43:24,129   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_vendor\resolvelib\resolvers.py", line 546, in resolve
+2024-04-29T17:43:24,129     state = resolution.resolve(requirements, max_rounds=max_rounds)
+2024-04-29T17:43:24,129             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-04-29T17:43:24,129   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_vendor\resolvelib\resolvers.py", line 399, in resolve
+2024-04-29T17:43:24,129     raise ResolutionImpossible(e.criterion.information)
+2024-04-29T17:43:24,129 pip._vendor.resolvelib.resolvers.ResolutionImpossible: [RequirementInformation(requirement=SpecifierRequirement('pickle'), parent=None)]
+2024-04-29T17:43:24,129 
+2024-04-29T17:43:24,129 The above exception was the direct cause of the following exception:
+2024-04-29T17:43:24,129 
+2024-04-29T17:43:24,129 Traceback (most recent call last):
+2024-04-29T17:43:24,129   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_internal\cli\base_command.py", line 180, in exc_logging_wrapper
+2024-04-29T17:43:24,129     status = run_func(*args)
+2024-04-29T17:43:24,129              ^^^^^^^^^^^^^^^
+2024-04-29T17:43:24,129   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_internal\cli\req_command.py", line 245, in wrapper
+2024-04-29T17:43:24,129     return func(self, options, args)
+2024-04-29T17:43:24,129            ^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-04-29T17:43:24,129   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_internal\commands\install.py", line 377, in run
+2024-04-29T17:43:24,129     requirement_set = resolver.resolve(
+2024-04-29T17:43:24,129                       ^^^^^^^^^^^^^^^^^
+2024-04-29T17:43:24,129   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_internal\resolution\resolvelib\resolver.py", line 104, in resolve
+2024-04-29T17:43:24,129     raise error from e
+2024-04-29T17:43:24,129 pip._internal.exceptions.DistributionNotFound: No matching distribution found for pickle
+2024-04-29T17:43:24,171 Remote version of pip: 24.0
+2024-04-29T17:43:24,171 Local version of pip:  24.0
+2024-04-29T17:43:24,187 Was pip installed by pip? True
+2024-04-29T17:43:24,188 Removed build tracker: 'C:\\Users\\ByteDesktop\\AppData\\Local\\Temp\\pip-build-tracker-l0pyh6hi'
+2024-04-29T17:43:38,777 Using pip 24.0 from C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip (python 3.12)
+2024-04-29T17:43:38,777 Non-user install because site-packages writeable
+2024-04-29T17:43:38,835 Created temporary directory: C:\Users\ByteDesktop\AppData\Local\Temp\pip-build-tracker-iwk25ds_
+2024-04-29T17:43:38,836 Initialized build tracking at C:\Users\ByteDesktop\AppData\Local\Temp\pip-build-tracker-iwk25ds_
+2024-04-29T17:43:38,836 Created build tracker: C:\Users\ByteDesktop\AppData\Local\Temp\pip-build-tracker-iwk25ds_
+2024-04-29T17:43:38,836 Entered build tracker: C:\Users\ByteDesktop\AppData\Local\Temp\pip-build-tracker-iwk25ds_
+2024-04-29T17:43:38,836 Created temporary directory: C:\Users\ByteDesktop\AppData\Local\Temp\pip-install-rns3j4n1
+2024-04-29T17:43:38,839 Created temporary directory: C:\Users\ByteDesktop\AppData\Local\Temp\pip-ephem-wheel-cache-lf5lnmgt
+2024-04-29T17:43:38,871 1 location(s) to search for versions of pickle:
+2024-04-29T17:43:38,871 * https://pypi.org/simple/pickle/
+2024-04-29T17:43:38,871 Fetching project page and analyzing links: https://pypi.org/simple/pickle/
+2024-04-29T17:43:38,871 Getting page https://pypi.org/simple/pickle/
+2024-04-29T17:43:38,871 Found index url https://pypi.org/simple/
+2024-04-29T17:43:38,872 Looking up "https://pypi.org/simple/pickle/" in the cache
+2024-04-29T17:43:38,872 Request header has "max_age" as 0, cache bypassed
+2024-04-29T17:43:38,873 No cache entry available
+2024-04-29T17:43:38,873 Starting new HTTPS connection (1): pypi.org:443
+2024-04-29T17:43:39,178 https://pypi.org:443 "GET /simple/pickle/ HTTP/1.1" 404 13
+2024-04-29T17:43:39,179 Status code 404 not in (200, 203, 300, 301, 308)
+2024-04-29T17:43:39,180 Could not fetch URL https://pypi.org/simple/pickle/: 404 Client Error: Not Found for url: https://pypi.org/simple/pickle/ - skipping
+2024-04-29T17:43:39,180 Skipping link: not a file: https://pypi.org/simple/pickle/
+2024-04-29T17:43:39,180 Given no hashes to check 0 links for project 'pickle': discarding no candidates
+2024-04-29T17:43:39,180 ERROR: Could not find a version that satisfies the requirement pickle (from versions: none)
+2024-04-29T17:43:39,181 ERROR: No matching distribution found for pickle
+2024-04-29T17:43:39,181 Exception information:
+2024-04-29T17:43:39,181 Traceback (most recent call last):
+2024-04-29T17:43:39,181   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_vendor\resolvelib\resolvers.py", line 397, in resolve
+2024-04-29T17:43:39,181     self._add_to_criteria(self.state.criteria, r, parent=None)
+2024-04-29T17:43:39,181   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_vendor\resolvelib\resolvers.py", line 174, in _add_to_criteria
+2024-04-29T17:43:39,181     raise RequirementsConflicted(criterion)
+2024-04-29T17:43:39,181 pip._vendor.resolvelib.resolvers.RequirementsConflicted: Requirements conflict: SpecifierRequirement('pickle')
+2024-04-29T17:43:39,181 
+2024-04-29T17:43:39,181 During handling of the above exception, another exception occurred:
+2024-04-29T17:43:39,181 
+2024-04-29T17:43:39,181 Traceback (most recent call last):
+2024-04-29T17:43:39,181   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_internal\resolution\resolvelib\resolver.py", line 95, in resolve
+2024-04-29T17:43:39,181     result = self._result = resolver.resolve(
+2024-04-29T17:43:39,181                             ^^^^^^^^^^^^^^^^^
+2024-04-29T17:43:39,181   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_vendor\resolvelib\resolvers.py", line 546, in resolve
+2024-04-29T17:43:39,181     state = resolution.resolve(requirements, max_rounds=max_rounds)
+2024-04-29T17:43:39,181             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-04-29T17:43:39,181   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_vendor\resolvelib\resolvers.py", line 399, in resolve
+2024-04-29T17:43:39,181     raise ResolutionImpossible(e.criterion.information)
+2024-04-29T17:43:39,181 pip._vendor.resolvelib.resolvers.ResolutionImpossible: [RequirementInformation(requirement=SpecifierRequirement('pickle'), parent=None)]
+2024-04-29T17:43:39,181 
+2024-04-29T17:43:39,181 The above exception was the direct cause of the following exception:
+2024-04-29T17:43:39,181 
+2024-04-29T17:43:39,181 Traceback (most recent call last):
+2024-04-29T17:43:39,181   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_internal\cli\base_command.py", line 180, in exc_logging_wrapper
+2024-04-29T17:43:39,181     status = run_func(*args)
+2024-04-29T17:43:39,181              ^^^^^^^^^^^^^^^
+2024-04-29T17:43:39,181   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_internal\cli\req_command.py", line 245, in wrapper
+2024-04-29T17:43:39,181     return func(self, options, args)
+2024-04-29T17:43:39,181            ^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-04-29T17:43:39,181   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_internal\commands\install.py", line 377, in run
+2024-04-29T17:43:39,181     requirement_set = resolver.resolve(
+2024-04-29T17:43:39,181                       ^^^^^^^^^^^^^^^^^
+2024-04-29T17:43:39,181   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_internal\resolution\resolvelib\resolver.py", line 104, in resolve
+2024-04-29T17:43:39,181     raise error from e
+2024-04-29T17:43:39,181 pip._internal.exceptions.DistributionNotFound: No matching distribution found for pickle
+2024-04-29T17:43:39,222 Remote version of pip: 24.0
+2024-04-29T17:43:39,222 Local version of pip:  24.0
+2024-04-29T17:43:39,239 Was pip installed by pip? True
+2024-04-29T17:43:39,239 Removed build tracker: 'C:\\Users\\ByteDesktop\\AppData\\Local\\Temp\\pip-build-tracker-iwk25ds_'
+2024-04-29T17:45:14,790 Using pip 24.0 from C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip (python 3.12)
+2024-04-29T17:45:14,791 Non-user install because site-packages writeable
+2024-04-29T17:45:14,848 Created temporary directory: C:\Users\ByteDesktop\AppData\Local\Temp\pip-build-tracker-pv2_kthu
+2024-04-29T17:45:14,849 Initialized build tracking at C:\Users\ByteDesktop\AppData\Local\Temp\pip-build-tracker-pv2_kthu
+2024-04-29T17:45:14,849 Created build tracker: C:\Users\ByteDesktop\AppData\Local\Temp\pip-build-tracker-pv2_kthu
+2024-04-29T17:45:14,849 Entered build tracker: C:\Users\ByteDesktop\AppData\Local\Temp\pip-build-tracker-pv2_kthu
+2024-04-29T17:45:14,849 Created temporary directory: C:\Users\ByteDesktop\AppData\Local\Temp\pip-install-tr1jkcpj
+2024-04-29T17:45:14,851 Created temporary directory: C:\Users\ByteDesktop\AppData\Local\Temp\pip-ephem-wheel-cache-c5pi7m8s
+2024-04-29T17:45:14,889 1 location(s) to search for versions of pickle:
+2024-04-29T17:45:14,889 * https://pypi.org/simple/pickle/
+2024-04-29T17:45:14,889 Fetching project page and analyzing links: https://pypi.org/simple/pickle/
+2024-04-29T17:45:14,889 Getting page https://pypi.org/simple/pickle/
+2024-04-29T17:45:14,889 Found index url https://pypi.org/simple/
+2024-04-29T17:45:14,890 Looking up "https://pypi.org/simple/pickle/" in the cache
+2024-04-29T17:45:14,890 Request header has "max_age" as 0, cache bypassed
+2024-04-29T17:45:14,891 No cache entry available
+2024-04-29T17:45:14,891 Starting new HTTPS connection (1): pypi.org:443
+2024-04-29T17:45:15,198 https://pypi.org:443 "GET /simple/pickle/ HTTP/1.1" 404 13
+2024-04-29T17:45:15,199 Status code 404 not in (200, 203, 300, 301, 308)
+2024-04-29T17:45:15,199 Could not fetch URL https://pypi.org/simple/pickle/: 404 Client Error: Not Found for url: https://pypi.org/simple/pickle/ - skipping
+2024-04-29T17:45:15,200 Skipping link: not a file: https://pypi.org/simple/pickle/
+2024-04-29T17:45:15,200 Given no hashes to check 0 links for project 'pickle': discarding no candidates
+2024-04-29T17:45:15,200 ERROR: Could not find a version that satisfies the requirement pickle (from versions: none)
+2024-04-29T17:45:15,201 ERROR: No matching distribution found for pickle
+2024-04-29T17:45:15,201 Exception information:
+2024-04-29T17:45:15,201 Traceback (most recent call last):
+2024-04-29T17:45:15,201   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_vendor\resolvelib\resolvers.py", line 397, in resolve
+2024-04-29T17:45:15,201     self._add_to_criteria(self.state.criteria, r, parent=None)
+2024-04-29T17:45:15,201   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_vendor\resolvelib\resolvers.py", line 174, in _add_to_criteria
+2024-04-29T17:45:15,201     raise RequirementsConflicted(criterion)
+2024-04-29T17:45:15,201 pip._vendor.resolvelib.resolvers.RequirementsConflicted: Requirements conflict: SpecifierRequirement('pickle')
+2024-04-29T17:45:15,201 
+2024-04-29T17:45:15,201 During handling of the above exception, another exception occurred:
+2024-04-29T17:45:15,201 
+2024-04-29T17:45:15,201 Traceback (most recent call last):
+2024-04-29T17:45:15,201   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_internal\resolution\resolvelib\resolver.py", line 95, in resolve
+2024-04-29T17:45:15,201     result = self._result = resolver.resolve(
+2024-04-29T17:45:15,201                             ^^^^^^^^^^^^^^^^^
+2024-04-29T17:45:15,201   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_vendor\resolvelib\resolvers.py", line 546, in resolve
+2024-04-29T17:45:15,201     state = resolution.resolve(requirements, max_rounds=max_rounds)
+2024-04-29T17:45:15,201             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-04-29T17:45:15,201   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_vendor\resolvelib\resolvers.py", line 399, in resolve
+2024-04-29T17:45:15,201     raise ResolutionImpossible(e.criterion.information)
+2024-04-29T17:45:15,201 pip._vendor.resolvelib.resolvers.ResolutionImpossible: [RequirementInformation(requirement=SpecifierRequirement('pickle'), parent=None)]
+2024-04-29T17:45:15,201 
+2024-04-29T17:45:15,201 The above exception was the direct cause of the following exception:
+2024-04-29T17:45:15,201 
+2024-04-29T17:45:15,201 Traceback (most recent call last):
+2024-04-29T17:45:15,201   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_internal\cli\base_command.py", line 180, in exc_logging_wrapper
+2024-04-29T17:45:15,201     status = run_func(*args)
+2024-04-29T17:45:15,201              ^^^^^^^^^^^^^^^
+2024-04-29T17:45:15,201   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_internal\cli\req_command.py", line 245, in wrapper
+2024-04-29T17:45:15,201     return func(self, options, args)
+2024-04-29T17:45:15,201            ^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-04-29T17:45:15,201   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_internal\commands\install.py", line 377, in run
+2024-04-29T17:45:15,201     requirement_set = resolver.resolve(
+2024-04-29T17:45:15,201                       ^^^^^^^^^^^^^^^^^
+2024-04-29T17:45:15,201   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_internal\resolution\resolvelib\resolver.py", line 104, in resolve
+2024-04-29T17:45:15,201     raise error from e
+2024-04-29T17:45:15,201 pip._internal.exceptions.DistributionNotFound: No matching distribution found for pickle
+2024-04-29T17:45:15,242 Remote version of pip: 24.0
+2024-04-29T17:45:15,243 Local version of pip:  24.0
+2024-04-29T17:45:15,259 Was pip installed by pip? True
+2024-04-29T17:45:15,259 Removed build tracker: 'C:\\Users\\ByteDesktop\\AppData\\Local\\Temp\\pip-build-tracker-pv2_kthu'
+2024-04-29T17:46:11,584 Using pip 24.0 from C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip (python 3.12)
+2024-04-29T17:46:11,585 Non-user install because site-packages writeable
+2024-04-29T17:46:11,642 Created temporary directory: C:\Users\ByteDesktop\AppData\Local\Temp\pip-build-tracker-yo1tr3cu
+2024-04-29T17:46:11,643 Initialized build tracking at C:\Users\ByteDesktop\AppData\Local\Temp\pip-build-tracker-yo1tr3cu
+2024-04-29T17:46:11,643 Created build tracker: C:\Users\ByteDesktop\AppData\Local\Temp\pip-build-tracker-yo1tr3cu
+2024-04-29T17:46:11,643 Entered build tracker: C:\Users\ByteDesktop\AppData\Local\Temp\pip-build-tracker-yo1tr3cu
+2024-04-29T17:46:11,643 Created temporary directory: C:\Users\ByteDesktop\AppData\Local\Temp\pip-install-pfj4ku22
+2024-04-29T17:46:11,645 Created temporary directory: C:\Users\ByteDesktop\AppData\Local\Temp\pip-ephem-wheel-cache-n5osj32o
+2024-04-29T17:46:11,676 1 location(s) to search for versions of pickle:
+2024-04-29T17:46:11,676 * https://pypi.org/simple/pickle/
+2024-04-29T17:46:11,676 Fetching project page and analyzing links: https://pypi.org/simple/pickle/
+2024-04-29T17:46:11,676 Getting page https://pypi.org/simple/pickle/
+2024-04-29T17:46:11,677 Found index url https://pypi.org/simple/
+2024-04-29T17:46:11,677 Looking up "https://pypi.org/simple/pickle/" in the cache
+2024-04-29T17:46:11,678 Request header has "max_age" as 0, cache bypassed
+2024-04-29T17:46:11,678 No cache entry available
+2024-04-29T17:46:11,678 Starting new HTTPS connection (1): pypi.org:443
+2024-04-29T17:46:11,977 https://pypi.org:443 "GET /simple/pickle/ HTTP/1.1" 404 13
+2024-04-29T17:46:11,978 Status code 404 not in (200, 203, 300, 301, 308)
+2024-04-29T17:46:11,978 Could not fetch URL https://pypi.org/simple/pickle/: 404 Client Error: Not Found for url: https://pypi.org/simple/pickle/ - skipping
+2024-04-29T17:46:11,978 Skipping link: not a file: https://pypi.org/simple/pickle/
+2024-04-29T17:46:11,979 Given no hashes to check 0 links for project 'pickle': discarding no candidates
+2024-04-29T17:46:11,979 ERROR: Could not find a version that satisfies the requirement pickle (from versions: none)
+2024-04-29T17:46:11,979 ERROR: No matching distribution found for pickle
+2024-04-29T17:46:11,980 Exception information:
+2024-04-29T17:46:11,980 Traceback (most recent call last):
+2024-04-29T17:46:11,980   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_vendor\resolvelib\resolvers.py", line 397, in resolve
+2024-04-29T17:46:11,980     self._add_to_criteria(self.state.criteria, r, parent=None)
+2024-04-29T17:46:11,980   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_vendor\resolvelib\resolvers.py", line 174, in _add_to_criteria
+2024-04-29T17:46:11,980     raise RequirementsConflicted(criterion)
+2024-04-29T17:46:11,980 pip._vendor.resolvelib.resolvers.RequirementsConflicted: Requirements conflict: SpecifierRequirement('pickle')
+2024-04-29T17:46:11,980 
+2024-04-29T17:46:11,980 During handling of the above exception, another exception occurred:
+2024-04-29T17:46:11,980 
+2024-04-29T17:46:11,980 Traceback (most recent call last):
+2024-04-29T17:46:11,980   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_internal\resolution\resolvelib\resolver.py", line 95, in resolve
+2024-04-29T17:46:11,980     result = self._result = resolver.resolve(
+2024-04-29T17:46:11,980                             ^^^^^^^^^^^^^^^^^
+2024-04-29T17:46:11,980   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_vendor\resolvelib\resolvers.py", line 546, in resolve
+2024-04-29T17:46:11,980     state = resolution.resolve(requirements, max_rounds=max_rounds)
+2024-04-29T17:46:11,980             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-04-29T17:46:11,980   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_vendor\resolvelib\resolvers.py", line 399, in resolve
+2024-04-29T17:46:11,980     raise ResolutionImpossible(e.criterion.information)
+2024-04-29T17:46:11,980 pip._vendor.resolvelib.resolvers.ResolutionImpossible: [RequirementInformation(requirement=SpecifierRequirement('pickle'), parent=None)]
+2024-04-29T17:46:11,980 
+2024-04-29T17:46:11,980 The above exception was the direct cause of the following exception:
+2024-04-29T17:46:11,980 
+2024-04-29T17:46:11,980 Traceback (most recent call last):
+2024-04-29T17:46:11,980   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_internal\cli\base_command.py", line 180, in exc_logging_wrapper
+2024-04-29T17:46:11,980     status = run_func(*args)
+2024-04-29T17:46:11,980              ^^^^^^^^^^^^^^^
+2024-04-29T17:46:11,980   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_internal\cli\req_command.py", line 245, in wrapper
+2024-04-29T17:46:11,980     return func(self, options, args)
+2024-04-29T17:46:11,980            ^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-04-29T17:46:11,980   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_internal\commands\install.py", line 377, in run
+2024-04-29T17:46:11,980     requirement_set = resolver.resolve(
+2024-04-29T17:46:11,980                       ^^^^^^^^^^^^^^^^^
+2024-04-29T17:46:11,980   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_internal\resolution\resolvelib\resolver.py", line 104, in resolve
+2024-04-29T17:46:11,980     raise error from e
+2024-04-29T17:46:11,980 pip._internal.exceptions.DistributionNotFound: No matching distribution found for pickle
+2024-04-29T17:46:12,021 Remote version of pip: 24.0
+2024-04-29T17:46:12,022 Local version of pip:  24.0
+2024-04-29T17:46:12,038 Was pip installed by pip? True
+2024-04-29T17:46:12,038 Removed build tracker: 'C:\\Users\\ByteDesktop\\AppData\\Local\\Temp\\pip-build-tracker-yo1tr3cu'
+2024-04-29T17:46:46,611 Using pip 24.0 from C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip (python 3.12)
+2024-04-29T17:46:46,611 Non-user install because site-packages writeable
+2024-04-29T17:46:46,670 Created temporary directory: C:\Users\ByteDesktop\AppData\Local\Temp\pip-build-tracker-ekgv10sv
+2024-04-29T17:46:46,671 Initialized build tracking at C:\Users\ByteDesktop\AppData\Local\Temp\pip-build-tracker-ekgv10sv
+2024-04-29T17:46:46,671 Created build tracker: C:\Users\ByteDesktop\AppData\Local\Temp\pip-build-tracker-ekgv10sv
+2024-04-29T17:46:46,671 Entered build tracker: C:\Users\ByteDesktop\AppData\Local\Temp\pip-build-tracker-ekgv10sv
+2024-04-29T17:46:46,671 Created temporary directory: C:\Users\ByteDesktop\AppData\Local\Temp\pip-install-xhu1zurn
+2024-04-29T17:46:46,673 Created temporary directory: C:\Users\ByteDesktop\AppData\Local\Temp\pip-ephem-wheel-cache-e5fr7ijh
+2024-04-29T17:46:46,704 1 location(s) to search for versions of pickle:
+2024-04-29T17:46:46,704 * https://pypi.org/simple/pickle/
+2024-04-29T17:46:46,704 Fetching project page and analyzing links: https://pypi.org/simple/pickle/
+2024-04-29T17:46:46,705 Getting page https://pypi.org/simple/pickle/
+2024-04-29T17:46:46,705 Found index url https://pypi.org/simple/
+2024-04-29T17:46:46,706 Looking up "https://pypi.org/simple/pickle/" in the cache
+2024-04-29T17:46:46,706 Request header has "max_age" as 0, cache bypassed
+2024-04-29T17:46:46,706 No cache entry available
+2024-04-29T17:46:46,707 Starting new HTTPS connection (1): pypi.org:443
+2024-04-29T17:46:47,042 https://pypi.org:443 "GET /simple/pickle/ HTTP/1.1" 404 13
+2024-04-29T17:46:47,043 Status code 404 not in (200, 203, 300, 301, 308)
+2024-04-29T17:46:47,043 Could not fetch URL https://pypi.org/simple/pickle/: 404 Client Error: Not Found for url: https://pypi.org/simple/pickle/ - skipping
+2024-04-29T17:46:47,043 Skipping link: not a file: https://pypi.org/simple/pickle/
+2024-04-29T17:46:47,043 Given no hashes to check 0 links for project 'pickle': discarding no candidates
+2024-04-29T17:46:47,044 ERROR: Could not find a version that satisfies the requirement pickle (from versions: none)
+2024-04-29T17:46:47,044 ERROR: No matching distribution found for pickle
+2024-04-29T17:46:47,045 Exception information:
+2024-04-29T17:46:47,045 Traceback (most recent call last):
+2024-04-29T17:46:47,045   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_vendor\resolvelib\resolvers.py", line 397, in resolve
+2024-04-29T17:46:47,045     self._add_to_criteria(self.state.criteria, r, parent=None)
+2024-04-29T17:46:47,045   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_vendor\resolvelib\resolvers.py", line 174, in _add_to_criteria
+2024-04-29T17:46:47,045     raise RequirementsConflicted(criterion)
+2024-04-29T17:46:47,045 pip._vendor.resolvelib.resolvers.RequirementsConflicted: Requirements conflict: SpecifierRequirement('pickle')
+2024-04-29T17:46:47,045 
+2024-04-29T17:46:47,045 During handling of the above exception, another exception occurred:
+2024-04-29T17:46:47,045 
+2024-04-29T17:46:47,045 Traceback (most recent call last):
+2024-04-29T17:46:47,045   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_internal\resolution\resolvelib\resolver.py", line 95, in resolve
+2024-04-29T17:46:47,045     result = self._result = resolver.resolve(
+2024-04-29T17:46:47,045                             ^^^^^^^^^^^^^^^^^
+2024-04-29T17:46:47,045   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_vendor\resolvelib\resolvers.py", line 546, in resolve
+2024-04-29T17:46:47,045     state = resolution.resolve(requirements, max_rounds=max_rounds)
+2024-04-29T17:46:47,045             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-04-29T17:46:47,045   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_vendor\resolvelib\resolvers.py", line 399, in resolve
+2024-04-29T17:46:47,045     raise ResolutionImpossible(e.criterion.information)
+2024-04-29T17:46:47,045 pip._vendor.resolvelib.resolvers.ResolutionImpossible: [RequirementInformation(requirement=SpecifierRequirement('pickle'), parent=None)]
+2024-04-29T17:46:47,045 
+2024-04-29T17:46:47,045 The above exception was the direct cause of the following exception:
+2024-04-29T17:46:47,045 
+2024-04-29T17:46:47,045 Traceback (most recent call last):
+2024-04-29T17:46:47,045   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_internal\cli\base_command.py", line 180, in exc_logging_wrapper
+2024-04-29T17:46:47,045     status = run_func(*args)
+2024-04-29T17:46:47,045              ^^^^^^^^^^^^^^^
+2024-04-29T17:46:47,045   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_internal\cli\req_command.py", line 245, in wrapper
+2024-04-29T17:46:47,045     return func(self, options, args)
+2024-04-29T17:46:47,045            ^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-04-29T17:46:47,045   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_internal\commands\install.py", line 377, in run
+2024-04-29T17:46:47,045     requirement_set = resolver.resolve(
+2024-04-29T17:46:47,045                       ^^^^^^^^^^^^^^^^^
+2024-04-29T17:46:47,045   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_internal\resolution\resolvelib\resolver.py", line 104, in resolve
+2024-04-29T17:46:47,045     raise error from e
+2024-04-29T17:46:47,045 pip._internal.exceptions.DistributionNotFound: No matching distribution found for pickle
+2024-04-29T17:46:47,089 Remote version of pip: 24.0
+2024-04-29T17:46:47,089 Local version of pip:  24.0
+2024-04-29T17:46:47,106 Was pip installed by pip? True
+2024-04-29T17:46:47,106 Removed build tracker: 'C:\\Users\\ByteDesktop\\AppData\\Local\\Temp\\pip-build-tracker-ekgv10sv'
+2024-04-29T17:47:07,056 Using pip 24.0 from C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip (python 3.12)
+2024-04-29T17:47:07,057 Non-user install because site-packages writeable
+2024-04-29T17:47:07,115 Created temporary directory: C:\Users\ByteDesktop\AppData\Local\Temp\pip-build-tracker-tb0781jh
+2024-04-29T17:47:07,115 Initialized build tracking at C:\Users\ByteDesktop\AppData\Local\Temp\pip-build-tracker-tb0781jh
+2024-04-29T17:47:07,116 Created build tracker: C:\Users\ByteDesktop\AppData\Local\Temp\pip-build-tracker-tb0781jh
+2024-04-29T17:47:07,116 Entered build tracker: C:\Users\ByteDesktop\AppData\Local\Temp\pip-build-tracker-tb0781jh
+2024-04-29T17:47:07,116 Created temporary directory: C:\Users\ByteDesktop\AppData\Local\Temp\pip-install-urrjf6l4
+2024-04-29T17:47:07,118 Created temporary directory: C:\Users\ByteDesktop\AppData\Local\Temp\pip-ephem-wheel-cache-w0yinki7
+2024-04-29T17:47:07,150 1 location(s) to search for versions of pickle:
+2024-04-29T17:47:07,150 * https://pypi.org/simple/pickle/
+2024-04-29T17:47:07,150 Fetching project page and analyzing links: https://pypi.org/simple/pickle/
+2024-04-29T17:47:07,150 Getting page https://pypi.org/simple/pickle/
+2024-04-29T17:47:07,151 Found index url https://pypi.org/simple/
+2024-04-29T17:47:07,152 Looking up "https://pypi.org/simple/pickle/" in the cache
+2024-04-29T17:47:07,152 Request header has "max_age" as 0, cache bypassed
+2024-04-29T17:47:07,152 No cache entry available
+2024-04-29T17:47:07,152 Starting new HTTPS connection (1): pypi.org:443
+2024-04-29T17:47:07,454 https://pypi.org:443 "GET /simple/pickle/ HTTP/1.1" 404 13
+2024-04-29T17:47:07,455 Status code 404 not in (200, 203, 300, 301, 308)
+2024-04-29T17:47:07,455 Could not fetch URL https://pypi.org/simple/pickle/: 404 Client Error: Not Found for url: https://pypi.org/simple/pickle/ - skipping
+2024-04-29T17:47:07,455 Skipping link: not a file: https://pypi.org/simple/pickle/
+2024-04-29T17:47:07,455 Given no hashes to check 0 links for project 'pickle': discarding no candidates
+2024-04-29T17:47:07,455 ERROR: Could not find a version that satisfies the requirement pickle (from versions: none)
+2024-04-29T17:47:07,456 ERROR: No matching distribution found for pickle
+2024-04-29T17:47:07,456 Exception information:
+2024-04-29T17:47:07,456 Traceback (most recent call last):
+2024-04-29T17:47:07,456   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_vendor\resolvelib\resolvers.py", line 397, in resolve
+2024-04-29T17:47:07,456     self._add_to_criteria(self.state.criteria, r, parent=None)
+2024-04-29T17:47:07,456   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_vendor\resolvelib\resolvers.py", line 174, in _add_to_criteria
+2024-04-29T17:47:07,456     raise RequirementsConflicted(criterion)
+2024-04-29T17:47:07,456 pip._vendor.resolvelib.resolvers.RequirementsConflicted: Requirements conflict: SpecifierRequirement('pickle')
+2024-04-29T17:47:07,456 
+2024-04-29T17:47:07,456 During handling of the above exception, another exception occurred:
+2024-04-29T17:47:07,456 
+2024-04-29T17:47:07,456 Traceback (most recent call last):
+2024-04-29T17:47:07,456   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_internal\resolution\resolvelib\resolver.py", line 95, in resolve
+2024-04-29T17:47:07,456     result = self._result = resolver.resolve(
+2024-04-29T17:47:07,456                             ^^^^^^^^^^^^^^^^^
+2024-04-29T17:47:07,456   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_vendor\resolvelib\resolvers.py", line 546, in resolve
+2024-04-29T17:47:07,456     state = resolution.resolve(requirements, max_rounds=max_rounds)
+2024-04-29T17:47:07,456             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-04-29T17:47:07,456   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_vendor\resolvelib\resolvers.py", line 399, in resolve
+2024-04-29T17:47:07,456     raise ResolutionImpossible(e.criterion.information)
+2024-04-29T17:47:07,456 pip._vendor.resolvelib.resolvers.ResolutionImpossible: [RequirementInformation(requirement=SpecifierRequirement('pickle'), parent=None)]
+2024-04-29T17:47:07,456 
+2024-04-29T17:47:07,456 The above exception was the direct cause of the following exception:
+2024-04-29T17:47:07,456 
+2024-04-29T17:47:07,456 Traceback (most recent call last):
+2024-04-29T17:47:07,456   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_internal\cli\base_command.py", line 180, in exc_logging_wrapper
+2024-04-29T17:47:07,456     status = run_func(*args)
+2024-04-29T17:47:07,456              ^^^^^^^^^^^^^^^
+2024-04-29T17:47:07,456   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_internal\cli\req_command.py", line 245, in wrapper
+2024-04-29T17:47:07,456     return func(self, options, args)
+2024-04-29T17:47:07,456            ^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-04-29T17:47:07,456   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_internal\commands\install.py", line 377, in run
+2024-04-29T17:47:07,456     requirement_set = resolver.resolve(
+2024-04-29T17:47:07,456                       ^^^^^^^^^^^^^^^^^
+2024-04-29T17:47:07,456   File "C:\Users\ByteDesktop\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip\_internal\resolution\resolvelib\resolver.py", line 104, in resolve
+2024-04-29T17:47:07,456     raise error from e
+2024-04-29T17:47:07,456 pip._internal.exceptions.DistributionNotFound: No matching distribution found for pickle
+2024-04-29T17:47:07,498 Remote version of pip: 24.0
+2024-04-29T17:47:07,499 Local version of pip:  24.0
+2024-04-29T17:47:07,515 Was pip installed by pip? True
+2024-04-29T17:47:07,515 Removed build tracker: 'C:\\Users\\ByteDesktop\\AppData\\Local\\Temp\\pip-build-tracker-tb0781jh'
