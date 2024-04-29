@@ -20,7 +20,6 @@ class Game:
 
         self.run()
 
-        
     def run(self) -> None:
         while self.menu:
             print(f"1. Start New Game\n"
@@ -48,8 +47,6 @@ class Game:
                     self.menu = False
                     quit(0)
                 case _:
-                    print(new)
-                    input("HELP ME PLZ GONNA KMS")
                     try:error("Invalid input (Game.run 'Start')")
                     except:self.run()
 

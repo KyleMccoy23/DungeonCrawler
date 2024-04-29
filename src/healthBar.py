@@ -48,13 +48,12 @@ class Bar:
               f"{self.colors['default'] if self.is_colored else ''}"
               f"{self.barrier}")
         
-
 class healthBar(Bar):
     def __init__(self, 
                  entity, 
                  length: int = 20, 
                  is_colored: bool = True, 
-                 color: str = "") -> None:
+                 color: str = "green2") -> None:
         super().__init__(length, is_colored, color)
         self.entity = entity
         self.max_value = entity.healthMax
@@ -71,7 +70,7 @@ class manaBar(Bar):
                  entity, 
                  length: int = 20, 
                  is_colored: bool = True, 
-                 color: str = "") -> None:
+                 color: str = "blue2") -> None:
         super().__init__(length, is_colored, color)
         self.entity = entity
         self.max_value = entity.manaMax
@@ -88,7 +87,7 @@ class staminaBar(Bar):
                  entity, 
                  length: int = 20, 
                  is_colored: bool = True, 
-                 color: str = "") -> None:
+                 color: str = "green") -> None:
         super().__init__(length, is_colored, color)
         self.entity = entity
         self.max_value = entity.staminaMax
