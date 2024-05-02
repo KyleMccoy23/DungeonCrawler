@@ -19,7 +19,7 @@ class playerManager:
 
         self.bonuses()
 
-        self.player.inventory.append([ironSword, 1])
+        self.player.inventory.update({ironSword: 1})
 
         self.player.setBars(healthBar(self.player, color='green2'), manaBar(self.player, color="blue2"), staminaBar(self.player, color='green'))
 
@@ -98,16 +98,17 @@ class playerManager:
         self.player.applyBonus_stat('Con', 10)
 
     def giveitem(self, items, player) -> None:
-        raise NotImplementedError("THE CODE BELOW DOENT WORK - ADDS TO MANY ITEMS TO THE INVENTORY(DOSNT ADD TO THE COUNTER MAKES NEW ITEM)")
+        # raise NotImplementedError("THE CODE BELOW DOENT WORK - ADDS TO MANY ITEMS TO THE INVENTORY(DOSNT ADD TO THE COUNTER MAKES NEW ITEM)")
         for item in items:
-            for e, i in enumerate(player.inventory):
-                print(player.inventory)
-                if i[0].name == item.name: # type: ignore
-                    amount = player.inventory[e][1]
-                    amount += 1
-                    player.inventory[e][1] = amount
-                    continue
+            player.inventory[item] = player.inventory.get(item, 0) + 1
+            # for e, i in enumerate(player.inventory):
+            #     print(player.inventory)
+            #     if i[0].name == item.name: # type: ignore
+            #         amount = player.inventory[e][1]
+            #         amount += 1
+            #         player.inventory[e][1] = amount
+            #         continue
 
-            player.inventory.append([item, 1])
-
+            # player.inventory.append([item, 1])
+        print(player.inventory)
         input()

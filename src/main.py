@@ -3,7 +3,7 @@ from playerManager import playerManager
 from battleManager import battleManager
 from file import *
 from help import help
-
+from items import stick, iron
 
 class Game:
     def __init__(self) -> None:
@@ -50,7 +50,7 @@ class Game:
                     try:error("Invalid input (Game.run 'Start')")
                     except:self.run()
 
-        # self.pManager.giveitem([stick, iron, iron], player=self.player)
+        self.pManager.giveitem([stick, iron, iron], player=self.player)
         self.battleManager.startBattle(self.player, self.enemy)
         
     def newGame(self) -> None:

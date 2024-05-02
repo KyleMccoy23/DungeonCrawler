@@ -41,9 +41,10 @@ class Player:
             'name':"",
         }
 
-        self.inventory: list[list] = [
-            [fists, 1]
-        ]
+        self.inventory: dict = {
+            fists:1,
+
+        }
 
         self.inHand = self.defaultWeapon
 
@@ -114,26 +115,33 @@ class Player:
         target.health = max(target.health, 0)
         target.healthBar.update()
 
-        print(f'{self.identity.get('name')} attacked with {self.inHand.name}')
+        print(f'{self.identity.get("name")} attacked with {self.inHand.name}')
     
     def useSkill(self, skill) -> None:
         raise NotImplementedError("SKills are not a thing yet")
     
     def hasItem(self, item: str) -> bool:
+        x = self.inventory.keys()
+        input(f"{item}\t{self.inventory.keys()}\t{x}\t{self.inventory}")
         for i in self.inventory:
-            if i[0].name == item:
+            input(i)
+            if item == i.name:
                 return True
         return False
     
     def getItem(self, item: str):
         for i in self.inventory:
-            if i[0].name == item:
-                return i[0]
+            if i.name == item:
+                return i
+        return None
 
     def changeWeapons(self, item: str) -> None:
         if not self.hasItem(item):
+            input("FAIL")
             return None
         itemObj: Item = self.getItem(item) # type: ignore
+        if itemObj == None:
+            return None
         if not itemObj.type == "weapon":
             input('not weapon')
             return None
