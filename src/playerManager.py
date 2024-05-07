@@ -98,7 +98,12 @@ class playerManager:
         self.player.applyBonus_stat('Con', 10)
 
     def giveitem(self, items, player) -> None:
+
+        # The code now works as intended - All commented code is legacy and doesnt work
+
+        # uncomment the line below if code starts to break
         # raise NotImplementedError("THE CODE BELOW DOENT WORK - ADDS TO MANY ITEMS TO THE INVENTORY(DOSNT ADD TO THE COUNTER MAKES NEW ITEM)")
+        
         for item in items:
             player.inventory[item] = player.inventory.get(item, 0) + 1
             # for e, i in enumerate(player.inventory):
@@ -110,5 +115,3 @@ class playerManager:
             #         continue
 
             # player.inventory.append([item, 1])
-        print(player.inventory)
-        input()

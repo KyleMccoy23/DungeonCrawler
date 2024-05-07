@@ -1,3 +1,7 @@
+# This ia legacy code and I am rewriting
+# Author: Kyle McCoy
+# Date: May 7, 2024 
+
 from config import *
 from playerManager import playerManager
 from battleManager import battleManager
@@ -8,13 +12,14 @@ from items import stick, iron
 class Game:
     def __init__(self) -> None:
         
+        self.battleManager = battleManager()
         self.pManager = playerManager()
         self.player = Player()
         self.enemy = Player()
+    
 
+        # temp Enemys are a WIP
         self.enemy = getPlayer("test")
-
-        self.battleManager = battleManager()
 
         self.menu = True
 
